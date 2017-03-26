@@ -82,5 +82,8 @@
       <Value>0</Value>
       <Comment>Decides if to flush al shared memory objects prior to running the masking</Comment>
     </MajorGlobalItem>
+    <MajorGlobalItem category="" type="Constant" name="TEMP">
+      <Value>1</Value>
+    </MajorGlobalItem>
   </ItemsList>
 </MajorGlobal>
