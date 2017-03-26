@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>aaa</Name>
+  <ID>aaa</ID>
+  <Version>2.4.0.10</Version>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <SerializationName />
+  <Columns>
+    <Column name="PATIENT_ID" id="tblCol_04d6db2ab91c495badf455702d952d26" index="0" datatype="Text" mandatory="true" serializationName="PATIENT_ID" />
+    <Column name="ALERGY_ID" id="tblCol_d28f1f19a8c54296b2a86806e8fa2b75" index="1" datatype="Text" mandatory="true" serializationName="ALERGY_ID" />
+    <Column name="MEDICATION_ALLERGY" id="tblCol_06465df1ea7941849d5fd70d6e788134" index="2" datatype="Text" serializationName="MEDICATION_ALLERGY" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

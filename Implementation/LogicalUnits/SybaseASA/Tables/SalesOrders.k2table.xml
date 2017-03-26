@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SalesOrders</Name>
+  <ID>tbl_SalesOrders</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_a7da3f254b994c75ad010d09262302f0" index="0" datatype="Integer" mandatory="true" />
+    <Column name="CustomerID" id="tblCol_a0257c698baf40e39c0f0e6e24044987" index="1" datatype="Integer" mandatory="true" />
+    <Column name="OrderDate" id="tblCol_93d4f59f6d134357a232b4fa8e36e8c5" index="2" datatype="Text" mandatory="true" />
+    <Column name="FinancialCode" id="tblCol_266c6e8218c1427c906d8fd64583bbf4" index="3" datatype="Text" />
+    <Column name="Region" id="tblCol_e0f719908b6a46309d138920854c4ea7" index="4" datatype="Text" />
+    <Column name="SalesRepresentative" id="tblCol_f85f9c1d113f46ddafbb19a95d9105fb" index="5" datatype="Integer" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

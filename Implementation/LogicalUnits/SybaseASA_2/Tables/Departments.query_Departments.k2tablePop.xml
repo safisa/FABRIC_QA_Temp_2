@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Departments</ID>
+  <PopulationObjectName>query_Departments</PopulationObjectName>
+  <TableName>Departments</TableName>
+  <RootItemID>query_query_Departments</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="DepartmentID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="DepartmentName" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="DepartmentHeadID" id="queryCol_2" dataType="Integer" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Departments" name="query_Departments" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbSybase_ASA_odbc">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="DepartmentID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="DepartmentName" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="DepartmentHeadID" dataType="Integer" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Departments]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_Departments" fromColID="queryCol_0" toItemID="tbl_Departments" toColID="tblCol_6b078b4466014a3c99df1ea2fbd802c6" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_Departments" fromColID="queryCol_1" toItemID="tbl_Departments" toColID="tblCol_1c68d01071f5421c9d64601e8fffda12" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_Departments" fromColID="queryCol_2" toItemID="tbl_Departments" toColID="tblCol_096309bfd25b40c8a68dafca87f8bc23" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

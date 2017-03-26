@@ -1,0 +1,25 @@
+﻿<Graph version="2.4.0.11" name="vdb.k2vdb.bin" lastPartID="1018">
+  <Node id="0" partID="0" name="film" isRootView="true" pos="11 213" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"film","TablePopulationPropertiesList":[{"ID":"query_public_film","Name":"query_public_film","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="29" name="film_actor" isRootView="false" pos="313 13" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"film_actor","TablePopulationPropertiesList":[{"ID":"query_public_film_actor","Name":"query_public_film_actor","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="49" name="film_category" isRootView="false" pos="313 213" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"film_category","TablePopulationPropertiesList":[{"ID":"query_public_film_category","Name":"query_public_film_category","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="67" name="inventory" isRootView="false" pos="313 413" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"inventory","TablePopulationPropertiesList":[{"ID":"query_public_inventory","Name":"query_public_inventory","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="4" partID="78" name="rental" isRootView="false" pos="769.5 538" size="257 138.546753" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"rental","TablePopulationPropertiesList":[{"ID":"query_public_rental","Name":"query_public_rental","Order":3,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="5" partID="95" name="payment" isRootView="false" pos="1227 488" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"payment","TablePopulationPropertiesList":[{"ID":"query_public_payment","Name":"query_public_payment","Order":4,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="6" to="7" partID="225" linkType="Database" pointsArr="268 259.545563 278 259.545563 303 75.63672 313 75.63672" fromNodePartID="0" fromNodeColumnName="film_id" toNodePartID="29" toNodeColumnName="film_id" toNodePopulationObjectName="query_public_film_actor" />
+  <Link from="6" to="8" partID="226" linkType="Database" pointsArr="268 259.545563 278 259.545563 303 259.5456 313 259.5456" fromNodePartID="0" fromNodeColumnName="film_id" toNodePartID="49" toNodeColumnName="film_id" toNodePopulationObjectName="query_public_film_category" />
+  <Link from="6" to="9" partID="227" linkType="Database" pointsArr="268 259.545563 278 259.545563 303 475.636719 313 475.636719" fromNodePartID="0" fromNodeColumnName="film_id" toNodePartID="67" toNodeColumnName="film_id" toNodePopulationObjectName="query_public_inventory" />
+  <Link from="10" to="11" partID="228" linkType="Database" pointsArr="570 459.545563 580 459.545563 759.5 616.727844 769.5 616.727844" fromNodePartID="67" fromNodeColumnName="inventory_id" toNodePartID="78" toNodeColumnName="inventory_id" toNodePopulationObjectName="query_public_rental" />
+  <Link from="12" to="13" partID="229" linkType="Database" pointsArr="1026.5 584.5456 1036.5 584.5456 1217 582.819 1227 582.819" fromNodePartID="78" fromNodeColumnName="rental_id" toNodePartID="95" toNodeColumnName="rental_id" toNodePopulationObjectName="query_public_payment" />
+</Graph>

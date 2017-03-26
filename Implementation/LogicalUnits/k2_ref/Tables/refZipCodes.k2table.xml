@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>refZipCodes</Name>
+  <ID>tbl_refZipCodes</ID>
+  <LazyDataUpdate performEvery="1.00:00:00">
+    <TruncateBeforeSync>false</TruncateBeforeSync>
+  </LazyDataUpdate>
+  <Columns>
+    <Column name="ZIP" id="tblCol_4dedf6db5a764268893cae699cd46462" index="0" datatype="text" />
+    <Column name="type" id="tblCol_44ac0578b72b436ba60a38afa5402575" index="1" datatype="Text" />
+    <Column name="primary_city" id="tblCol_466d33791a7f43cbbb218f18e93c55b8" index="2" datatype="Text" />
+    <Column name="acceptable_cities" id="tblCol_f1ce7ac4580c490fac7a103f6a09a84a" index="3" datatype="Text" />
+    <Column name="unacceptable_cities" id="tblCol_c684f08f606243989f98db1c5bf6d36d" index="4" datatype="Text" />
+    <Column name="state" id="tblCol_9b1d62f60cd847f5a82c93a8986e39f2" index="5" datatype="Text" />
+    <Column name="county" id="tblCol_d365ee6b9bed4597a6a1e11dc62db0b4" index="6" datatype="Text" />
+    <Column name="timezone" id="tblCol_a7b98d0f2c9e459c81f733405f20fdda" index="7" datatype="Text" />
+    <Column name="area_codes" id="tblCol_ac8843be64894e03a51cd14be4e1072d" index="8" datatype="Text" />
+    <Column name="latitude" id="tblCol_2c47cc27dd2b4d87a9d2400b208f6a1a" index="9" datatype="Text" />
+    <Column name="longitude" id="tblCol_7ced63c4c60649d3ae9850041e557a94" index="10" datatype="Text" />
+    <Column name="world_region" id="tblCol_ec6e75bf89a44127adc62741c368c157" index="11" datatype="Text" />
+    <Column name="country" id="tblCol_a343af46dd1644cb818c1dd6840899b6" index="12" datatype="Text" />
+    <Column name="decommissioned" id="tblCol_304b874fe74d478aa3d6654e7f5e8ba1" index="13" datatype="Text" />
+    <Column name="estimated_population" id="tblCol_4a798aab922f44caaafe7c95dc73ff80" index="14" datatype="Text" />
+    <Column name="notes" id="tblCol_aa49c87cd3ec4f069b9bcbdcd18a5804" index="15" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

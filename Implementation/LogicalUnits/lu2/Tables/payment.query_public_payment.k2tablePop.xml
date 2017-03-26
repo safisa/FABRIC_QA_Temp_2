@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_public_payment</ID>
+  <PopulationObjectName>query_public_payment</PopulationObjectName>
+  <TableName>payment</TableName>
+  <RootItemID>query_query_public_payment</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="payment_id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="customer_id" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="staff_id" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="rental_id" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="amount" id="queryCol_4" dataType="Real" index="4" />
+    <Arg name="payment_date" id="queryCol_5" dataType="Text" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_public_payment" name="query_public_payment" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbPostgreSQL_loc_dvd">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="payment_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="customer_id" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="staff_id" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="rental_id" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="amount" dataType="Real" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="payment_date" dataType="Text" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM public.payment]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_public_payment" fromColID="queryCol_0" toItemID="tbl_payment" toColID="tblCol_50bd7da2234a4f1e9ac5edfde721c68c" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_public_payment" fromColID="queryCol_1" toItemID="tbl_payment" toColID="tblCol_788ab13b86fd4e9790303b41a847a72b" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_public_payment" fromColID="queryCol_2" toItemID="tbl_payment" toColID="tblCol_1662ebf6c720443ea9fe69644e396cad" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_public_payment" fromColID="queryCol_3" toItemID="tbl_payment" toColID="tblCol_c1c68a7f9c8f43378b8f52b41f812130" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_public_payment" fromColID="queryCol_4" toItemID="tbl_payment" toColID="tblCol_b65577ad346a445d881257d5cf31de45" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_public_payment" fromColID="queryCol_5" toItemID="tbl_payment" toColID="tblCol_b8845d7fd546423fa802118fea8087e0" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

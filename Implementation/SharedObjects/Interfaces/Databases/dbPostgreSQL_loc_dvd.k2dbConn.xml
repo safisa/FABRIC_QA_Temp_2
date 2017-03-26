@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnPostgreSQL" name="dbPostgreSQL_loc_dvd" type="PostgreSQL" version="2.1.0.2">
+  <Active>true</Active>
+  <DataSource>localhost</DataSource>
+  <PortNum>5432</PortNum>
+  <DataBase>dvdrental</DataBase>
+  <UserId>postgres</UserId>
+  <Password>XCIJszp54aHjmDaZcSQaA+MC6r8OxMrchvgGlfc9V/Q=:7xK4LMMwU9ADYZUJcpznvDwI6wqsOlG9DK+GjdM4Rw8=</Password>
+  <ConnectionStringClient>Server='localhost';Port=5432;Database='dvdrental';User Id='postgres';Password='[PASSWORD]';</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:postgresql://localhost:5432/dvdrental?stringtype=unspecified</ConnectionStringServerSide>
+  <CommandList />
+  <ProviderType>Npgsql</ProviderType>
+</DBConn>

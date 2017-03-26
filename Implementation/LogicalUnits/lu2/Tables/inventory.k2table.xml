@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>inventory</Name>
+  <ID>tbl_inventory</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="inventory_id" id="tblCol_5e1b1ed211f24aaa90ddf0434ae96937" index="0" datatype="Integer" mandatory="true" />
+    <Column name="film_id" id="tblCol_ff673672fc1f4ff1a6786a46721db312" index="1" datatype="Integer" mandatory="true" />
+    <Column name="store_id" id="tblCol_5d718aa432a54265b97ca36b8929c88f" index="2" datatype="Integer" mandatory="true" />
+    <Column name="last_update" id="tblCol_ea0d3425c3b64566843976a03aa5a346" index="3" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_5e1b1ed211f24aaa90ddf0434ae96937" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

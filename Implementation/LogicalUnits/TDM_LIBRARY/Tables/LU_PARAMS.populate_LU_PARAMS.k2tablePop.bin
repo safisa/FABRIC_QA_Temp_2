@@ -1,0 +1,7 @@
+﻿<Graph name="LU_PARAMS.populate_LU_PARAMS.k2tablePop.bin" lastPartID="171">
+  <TableNode partID="0" name="LU_PARAMS" pos="516.1884 31" width="310.135681" />
+  <FunctionMapNode id="0" L0="1" R0="2" partID="80" topLabel="fnRootLuParams (80)" pos="41.12368 37" size="167.034058 45.09114" isRoot="true">
+    <KFunction>{"Name":"fnRootLuParams","ID":"f_80","Category":"Root","FunctionLevel":0,"FunctionType":0,"RegisterAsLuDbFunction":false,"SaveToDLUR":false,"ApiFunction":false,"DecisionFunction":false,"RequiresLuReference":false,"Desc":"","Auther":{"Name":"","ID":""},"Language":1,"FunctionBody":"yield(new Object[] {ENTITY_ID});","IsSyntaxValid":true,"IsRootFunction":true,"inputParams":[{"Name":"ENTITY_ID","ID":"fi_80.0","Index":0,"DataType":"String","Comment":""}],"outputParams":[{"Name":"ENTITY_ID","ID":"fo_80.0","Index":0,"DataType":"String","Comment":""}]}</KFunction>
+  </FunctionMapNode>
+  <Link partID="145" from="2" to="3" pointsArr="208.157745 62.0911446 218.157745 62.0911446 506.188416 62.0364571 516.1884 62.0364571" fromNodePartID="80" fromNodeColumnName="ENTITY_ID" toNodePartID="0" toNodeColumnName="ENTITY_ID" />
+</Graph>

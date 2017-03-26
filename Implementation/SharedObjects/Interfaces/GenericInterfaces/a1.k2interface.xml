@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GenericInterface xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="FTP" displayName="FTP" enabled="true" version="1.0">
+  <Name>a1</Name>
+  <Properties>
+    <Property name="IP" displayName="IP" dataType="string" mandatory="true" show="true" readOnly="false" category="">
+      <Value>111.11</Value>
+      <DefaultValue />
+      <Comments />
+      <OptionsList />
+    </Property>
+    <Property name="Port" displayName="Port" dataType="integer" mandatory="false" show="true" readOnly="false" category="">
+      <Value>11</Value>
+      <DefaultValue />
+      <Comments />
+      <OptionsList />
+    </Property>
+    <Property name="User" displayName="User" dataType="string" mandatory="false" show="true" readOnly="false" category="">
+      <Value>user1</Value>
+      <DefaultValue />
+      <Comments />
+      <OptionsList />
+    </Property>
+    <Property name="Password" displayName="Password" dataType="password" mandatory="false" show="true" readOnly="false" category="">
+      <Value>desW/aMkhQxx2Az20eKc7G8GLsl6U/ko0u8mFm2bjZM=:S69mSrEOnyUTNoPELCDA+jtZSxyY38XaMMq4bzmcXxY=</Value>
+      <DefaultValue />
+      <Comments />
+      <OptionsList />
+    </Property>
+    <Property name="RemoteDir" displayName="Remote Directory" dataType="string" mandatory="true" show="true" readOnly="false" category="">
+      <Value>/home/k2view/files</Value>
+      <DefaultValue />
+      <Comments />
+      <OptionsList />
+    </Property>
+    <Property name="FilesFilter" displayName="Files Filter" dataType="string" mandatory="false" show="true" readOnly="false" category="">
+      <Value>\.csv$</Value>
+      <DefaultValue />
+      <Comments>Regular expression</Comments>
+      <OptionsList />
+    </Property>
+    <Property name="LocalDir" displayName="Local Directory" dataType="string" mandatory="false" show="true" readOnly="false" category="">
+      <Value>c:/k2view</Value>
+      <DefaultValue />
+      <Comments />
+      <OptionsList />
+    </Property>
+    <Property name="SecureConnection" displayName="SSL/TLS" dataType="boolean" mandatory="false" show="true" readOnly="false" category="">
+      <Value>False</Value>
+      <DefaultValue>False</DefaultValue>
+      <Comments />
+      <OptionsList />
+    </Property>
+    <Property name="ConnectionMode" displayName="Connection Mode" dataType="OptionsList" mandatory="false" show="true" readOnly="false" category="">
+      <Value>1</Value>
+      <DefaultValue>1</DefaultValue>
+      <Comments>FTP connection mode</Comments>
+      <OptionsList>
+        <Option id="1">Passive</Option>
+        <Option id="2">Active</Option>
+      </OptionsList>
+    </Property>
+  </Properties>
+</GenericInterface>

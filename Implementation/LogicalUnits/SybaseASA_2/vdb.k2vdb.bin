@@ -1,0 +1,17 @@
+﻿<Graph version="3.0.3.0" name="vdb.k2vdb.bin" lastPartID="260">
+  <Node id="0" partID="0" name="Employees" isRootView="true" pos="11 138" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Employees","TablePopulationPropertiesList":[{"ID":"query_Employees","Name":"query_Employees","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="45" name="Departments" isRootView="false" pos="313 13" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"Departments","TablePopulationPropertiesList":[{"ID":"query_Departments","Name":"query_Departments","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="54" name="SalesOrders" isRootView="false" pos="313 213" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"SalesOrders","TablePopulationPropertiesList":[{"ID":"query_SalesOrders","Name":"query_SalesOrders","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="3" partID="69" name="SalesOrderItems" isRootView="false" pos="615 213" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"SalesOrderItems","TablePopulationPropertiesList":[{"ID":"query_SalesOrderItems","Name":"query_SalesOrderItems","Order":3,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="4" to="5" partID="180" linkType="Database" pointsArr="268 184.545578 278 184.545578 303 91.72786 313 91.72786" fromNodePartID="0" fromNodeColumnName="EmployeeID" toNodePartID="45" toNodeColumnName="DepartmentHeadID" toNodePopulationObjectName="query_Departments" />
+  <Link from="4" to="6" partID="181" linkType="Database" pointsArr="268 184.545578 278 184.545578 303 340.0013 313 340.0013" fromNodePartID="0" fromNodeColumnName="EmployeeID" toNodePartID="54" toNodeColumnName="SalesRepresentative" toNodePopulationObjectName="query_SalesOrders" />
+  <Link from="7" to="8" partID="182" linkType="Database" pointsArr="570 259.5456 580 259.5456 605 259.5456 615 259.5456" fromNodePartID="54" fromNodeColumnName="ID" toNodePartID="69" toNodeColumnName="ID" toNodePopulationObjectName="query_SalesOrderItems" />
+</Graph>

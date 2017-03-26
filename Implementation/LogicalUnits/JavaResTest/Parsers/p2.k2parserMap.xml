@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParserMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>p2</Name>
+  <MapType>ParserMap</MapType>
+  <RootItemID>f_1</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <TargetsList>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>P1_RT1</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item id="f_1" name="k2_FolderStreamReader" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_FolderStreamReader.k2function.xml">
+          <InputsList>
+            <Input id="fi_1.0" name="folderPath" />
+            <Input id="fi_1.1" name="folderPathDebug" />
+            <Input id="fi_1.2" name="regexFilter" />
+            <Input id="fi_1.3" name="recordDelimiter" />
+            <Input id="fi_1.4" name="fieldDelimiter" />
+            <Input id="fi_1.5" name="enclosingChar" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_1.0" name="result" />
+          </OutputsList>
+        </Item>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_P1_RT1" name="P1_RT1" nodeOrder="1" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="p2" active="true">
+          <InputsList>
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_98c50c9072ca48f7b4d72c6fbce2c2eb" name="result" dataType="BLOB" />
+          </InputsList>
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_98c50c9072ca48f7b4d72c6fbce2c2eb</RecordTypeKeyColumn>
+          <PkColumnsList />
+          <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+        </Item>
+      </ItemsList>
+      <LinksList>
+        <Link partId="10" fromNodeOrder="0" fromItemID="f_1" fromColID="fo_1.0" toItemID="rt_P1_RT1" toColID="rtCol_98c50c9072ca48f7b4d72c6fbce2c2eb" />
+      </LinksList>
+      <ParserMapRecordType id="rt_P1_RT1" name="P1_RT1" parentParser="p2">
+        <Active>true</Active>
+        <RecordTypeKeyColumn>rtCol_98c50c9072ca48f7b4d72c6fbce2c2eb</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_98c50c9072ca48f7b4d72c6fbce2c2eb" name="result" index="0">
+            <DataType>BLOB</DataType>
+          </Column>
+        </Columns>
+        <PkColumns />
+      </ParserMapRecordType>
+    </Target>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>P1_RT2</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_P1_RT2" name="P1_RT2" nodeOrder="0" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="p2" active="true">
+          <InputsList />
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_eaa487a474a942e5a94722eab54d7a81</RecordTypeKeyColumn>
+          <PkColumnsList />
+          <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+        </Item>
+      </ItemsList>
+      <LinksList />
+      <ParserMapRecordType id="rt_P1_RT2" name="P1_RT2" parentParser="p2">
+        <Active>true</Active>
+        <RecordTypeKeyColumn>rtCol_eaa487a474a942e5a94722eab54d7a81</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_eaa487a474a942e5a94722eab54d7a81" name="aa" index="0">
+            <DataType>Text</DataType>
+          </Column>
+        </Columns>
+        <PkColumns />
+      </ParserMapRecordType>
+    </Target>
+  </TargetsList>
+  <syncEvery>00:00:00</syncEvery>
+  <ExecutionScope>Each_Node</ExecutionScope>
+</ParserMap>

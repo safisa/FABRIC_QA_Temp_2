@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_ACCOUNTHISTORY</ID>
+  <PopulationObjectName>query_ACCOUNTHISTORY</PopulationObjectName>
+  <TableName>ACCOUNTHISTORY</TableName>
+  <RootItemID>query_query_ACCOUNTHISTORY</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ROWID" id="queryCol_0" dataType="Text" index="0" />
+    <Arg name="ACCOUNTID" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="FIELD" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="OLDVALUE" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="NEWVALUE" id="queryCol_4" dataType="Text" index="4" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_ACCOUNTHISTORY" name="query_ACCOUNTHISTORY" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="Salesforce_Safi">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ROWID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ACCOUNTID" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="FIELD" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="OLDVALUE" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="NEWVALUE" dataType="Text" index="4" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM ACCOUNTHISTORY]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="14" fromNodeOrder="0" fromItemID="query_query_ACCOUNTHISTORY" fromColID="queryCol_0" toItemID="tbl_ACCOUNTHISTORY" toColID="tblCol_ccb7d93588324c05adfbe98f7fdc5f07" />
+    <Link partId="15" fromNodeOrder="0" fromItemID="query_query_ACCOUNTHISTORY" fromColID="queryCol_1" toItemID="tbl_ACCOUNTHISTORY" toColID="tblCol_3ea4ed0aa2034ffeabdbb10197f8ec98" />
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_ACCOUNTHISTORY" fromColID="queryCol_2" toItemID="tbl_ACCOUNTHISTORY" toColID="tblCol_d330c3b270dc48199a4d61358f47eb5d" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_ACCOUNTHISTORY" fromColID="queryCol_3" toItemID="tbl_ACCOUNTHISTORY" toColID="tblCol_e9ae2997aaae47c487f5c095a4ec61a5" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_ACCOUNTHISTORY" fromColID="queryCol_4" toItemID="tbl_ACCOUNTHISTORY" toColID="tblCol_b7038bfcc68542a7a8d137603808a862" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

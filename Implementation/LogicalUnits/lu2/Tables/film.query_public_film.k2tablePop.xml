@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_public_film</ID>
+  <PopulationObjectName>query_public_film</PopulationObjectName>
+  <TableName>film</TableName>
+  <RootItemID>query_query_public_film</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="film_id" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_529" name="fnTestHeb" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="fnTestHeb.k2function.xml">
+      <InputsList>
+        <Input id="fi_529.0" name="in" defaultValue="שלום לכולם" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_529.0" name="out" />
+      </OutputsList>
+    </Item>
+    <Item xsi:type="DBQueryDataSave" id="query_query_public_film" name="query_public_film" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbPostgreSQL_loc_dvd">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="film_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="title" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="description" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="release_year" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="language_id" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="rental_duration" dataType="Integer" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="rental_rate" dataType="Real" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="length" dataType="Integer" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="replacement_cost" dataType="Real" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="rating" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="last_update" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="special_features" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_12" name="fulltext" dataType="Text" index="12" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM public.film]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="532" fromNodeOrder="0" fromItemID="f_529" fromColID="fo_529.0" />
+    <Link partId="370" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_0" toItemID="tbl_film" toColID="tblCol_e7d540247ab44becaa94dd50be20b15a" />
+    <Link partId="371" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_1" toItemID="tbl_film" toColID="tblCol_aaca5ca78d1c4d9da45df87816461cca" />
+    <Link partId="372" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_2" toItemID="tbl_film" toColID="tblCol_a509db6766094f128dee607390df2a22" />
+    <Link partId="373" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_3" toItemID="tbl_film" toColID="tblCol_f90a0d4990e3416295f64c9610a625f3" />
+    <Link partId="374" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_4" toItemID="tbl_film" toColID="tblCol_d632e0cfcb8e4cd79624cf3c9b0fd4ab" />
+    <Link partId="375" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_5" toItemID="tbl_film" toColID="tblCol_fd7ea2a4b9fc46e0b612efb4321fc1ff" />
+    <Link partId="376" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_6" toItemID="tbl_film" toColID="tblCol_0171ad7ca60a4c0ca6f063c17b3226cb" />
+    <Link partId="377" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_7" toItemID="tbl_film" toColID="tblCol_0572c4c8e1494291b4422d969c7d6ca6" />
+    <Link partId="378" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_8" toItemID="tbl_film" toColID="tblCol_f140c1429d73485381de83182949222e" />
+    <Link partId="379" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_9" toItemID="tbl_film" toColID="tblCol_49756b727d64459daabf2202ddb52985" />
+    <Link partId="380" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_10" toItemID="tbl_film" toColID="tblCol_a25822f72daa41298e2d048999a670fc" />
+    <Link partId="381" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_11" toItemID="tbl_film" toColID="tblCol_b9db230cf09e4c92904f0c8f97a69c76" />
+    <Link partId="382" fromNodeOrder="0" fromItemID="query_query_public_film" fromColID="queryCol_12" toItemID="tbl_film" toColID="tblCol_349ff969711d49019ca921cf70f8d1c7" />
+  </LinksList>
+  <ModeKeyColumnIDs>tblCol_e7d540247ab44becaa94dd50be20b15a,tblCol_aaca5ca78d1c4d9da45df87816461cca,tblCol_b9db230cf09e4c92904f0c8f97a69c76</ModeKeyColumnIDs>
+</TablePopulationObject>

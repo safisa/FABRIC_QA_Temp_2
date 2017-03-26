@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0.0.1">
+  <Name>vdb</Name>
+  <RootView>Customers</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>Customers</Table>
+    <Table>Contacts</Table>
+    <Table>SalesOrders</Table>
+    <Table>SalesOrderItems</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="Customers">
+      <Populations>
+        <Population id="query_Customers" name="query_Customers" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Contacts">
+      <Populations>
+        <Population id="query_Contacts" name="query_Contacts" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="SalesOrders">
+      <Populations>
+        <Population id="query_SalesOrders" name="query_SalesOrders" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="SalesOrderItems">
+      <Populations>
+        <Population id="query_SalesOrderItems" name="query_SalesOrderItems" order="3" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="refZipCodes" />
+    <Item active="false" name="yp_country_information" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="180">
+      <From tableType="TableObject" table="Customers" column="ID" columnId="tblCol_6a5e36264cc748799222237ab10bb8e5" />
+      <To tableType="TableObject" table="Contacts" populationObjectName="query_Contacts" column="CustomerID" columnId="queryCol_11" />
+    </Relation>
+    <Relation id="181">
+      <From tableType="TableObject" table="Customers" column="ID" columnId="tblCol_6a5e36264cc748799222237ab10bb8e5" />
+      <To tableType="TableObject" table="SalesOrders" populationObjectName="query_SalesOrders" column="CustomerID" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="182">
+      <From tableType="TableObject" table="SalesOrders" column="ID" columnId="tblCol_a7da3f254b994c75ad010d09262302f0" />
+      <To tableType="TableObject" table="SalesOrderItems" populationObjectName="query_SalesOrderItems" column="ID" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ACCOUNT</Name>
+  <ID>tbl_ACCOUNT</ID>
+  <EntityId>tblCol_996b0ec3b1ec496bb6cafc430cbeae4b</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ROW_ID" id="tblCol_996b0ec3b1ec496bb6cafc430cbeae4b" index="0" datatype="Text" mandatory="true" />
+    <Column name="SYS_NAME" id="tblCol_4fd840cd63a74989a0cd30c68447ee44" index="1" datatype="Text" mandatory="true" />
+    <Column name="TYPE" id="tblCol_c3cacf2f76504426ab5293485e627263" index="2" datatype="Text" />
+    <Column name="PARENTID" id="tblCol_3a504fdf52a540ad8ee666cb30faf20e" index="3" datatype="Text" />
+    <Column name="BILLINGSTREET" id="tblCol_64fd602f62414866b64087622ba1d6a8" index="4" datatype="Text" />
+    <Column name="BILLINGCITY" id="tblCol_203953043ad74a9c97f5c86eded2092f" index="5" datatype="Text" />
+    <Column name="BILLINGSTATE" id="tblCol_7093379b24174d55b0b79f21ba7247cb" index="6" datatype="Text" />
+    <Column name="BILLINGPOSTALCODE" id="tblCol_5371387197b04a54acda899f0760275a" index="7" datatype="Text" />
+    <Column name="BILLINGCOUNTRY" id="tblCol_8b9fbbe8a7a5418ca8f2a36a33cd2791" index="8" datatype="Text" />
+    <Column name="BILLINGLATITUDE" id="tblCol_172e15c3490745e8a66264c327278255" index="9" datatype="Real" />
+    <Column name="BILLINGLONGITUDE" id="tblCol_e16fd7cbc0174f61890a1075fcd7a855" index="10" datatype="Real" />
+    <Column name="SHIPPINGSTREET" id="tblCol_aab6bbf9a6f94fcab5bce402ad8ae56e" index="11" datatype="Text" />
+    <Column name="SHIPPINGCITY" id="tblCol_fa64a2afd7b94d54bfa643f016848dcb" index="12" datatype="Text" />
+    <Column name="SHIPPINGSTATE" id="tblCol_5db5caf89347432dbb280929cfc30890" index="13" datatype="Text" />
+    <Column name="SHIPPINGPOSTALCODE" id="tblCol_f75618bc45e240e5a1e0263fd14062b7" index="14" datatype="Text" />
+    <Column name="SHIPPINGCOUNTRY" id="tblCol_c4c3a2f72a184cc9b836869930090533" index="15" datatype="Text" />
+    <Column name="SHIPPINGLATITUDE" id="tblCol_782ee82f282b4338820698526923abf0" index="16" datatype="Real" />
+    <Column name="SHIPPINGLONGITUDE" id="tblCol_54bf64a6daf948d5a49db3980fea9874" index="17" datatype="Real" />
+    <Column name="PHONE" id="tblCol_e95527dab7dc43f89f488aa4cb278e62" index="18" datatype="Text" />
+    <Column name="FAX" id="tblCol_217414ded4f8445fafe0fc45d6866413" index="19" datatype="Text" />
+    <Column name="ACCOUNTNUMBER" id="tblCol_62ca52dc87594f6ca64ac145c522f301" index="20" datatype="Text" />
+    <Column name="WEBSITE" id="tblCol_66a94945a805432e841bd32a0767a060" index="21" datatype="Text" />
+    <Column name="PHOTOURL" id="tblCol_0062dadc903c41f78d6ae78957e45040" index="22" datatype="Text" />
+    <Column name="SIC" id="tblCol_b84d34ddab0945429aa8e14ac30ce17b" index="23" datatype="Text" />
+    <Column name="INDUSTRY" id="tblCol_f31e7ba0d75f457a85adb04c90f2f6e5" index="24" datatype="Text" />
+    <Column name="ANNUALREVENUE" id="tblCol_81c2813a3f2440c5bfa453080e72db84" index="25" datatype="Real" />
+    <Column name="NUMBEROFEMPLOYEES" id="tblCol_848195d7775243ac866ff78e091b59dd" index="26" datatype="Integer" />
+    <Column name="OWNERSHIP" id="tblCol_5b1688a972aa4af79cbe2f2eaacca78b" index="27" datatype="Text" />
+    <Column name="TICKERSYMBOL" id="tblCol_ae1d5d4c26a1473e926bd9d55e7bac3b" index="28" datatype="Text" />
+    <Column name="DESCRIPTION" id="tblCol_59a0d842258a480db606159a4e4aaeed" index="29" datatype="Text" />
+    <Column name="RATING" id="tblCol_a070a969586a4bc3a3b683b426aa9d1d" index="30" datatype="Text" />
+    <Column name="SITE" id="tblCol_fec8da89856f44d09fed86ab17ee680a" index="31" datatype="Text" />
+    <Column name="SYS_OWNERID" id="tblCol_f4d13bf90e354481b45004eb1ea879f3" index="32" datatype="Text" mandatory="true" />
+    <Column name="LASTVIEWEDDATE" id="tblCol_233315bd8f154027bd9b0177324e1070" index="33" datatype="Text" />
+    <Column name="LASTREFERENCEDDATE" id="tblCol_ac91109087b44ca395f834d8ff4a2f8a" index="34" datatype="Text" />
+    <Column name="JIGSAW" id="tblCol_ffe490d54300423aa6518a2b5eda5c3a" index="35" datatype="Text" />
+    <Column name="JIGSAWCOMPANYID" id="tblCol_3511d3f22e074415bb66ae90cfb9ee2b" index="36" datatype="Text" />
+    <Column name="CLEANSTATUS" id="tblCol_8ec03224241245b0a9c24c635e6ecae3" index="37" datatype="Text" />
+    <Column name="ACCOUNTSOURCE" id="tblCol_7584f0614fe64545acab7e6911212a4f" index="38" datatype="Text" />
+    <Column name="DUNSNUMBER" id="tblCol_f1bde927550b496c95e6b31041300297" index="39" datatype="Text" />
+    <Column name="TRADESTYLE" id="tblCol_c95e32ff1fcd420fbb0fd3706abae1d0" index="40" datatype="Text" />
+    <Column name="NAICSCODE" id="tblCol_f94f86a488354d92b2729457fbc2d44f" index="41" datatype="Text" />
+    <Column name="NAICSDESC" id="tblCol_4eaaa111ad5d4b5dae418e1659c7cf8b" index="42" datatype="Text" />
+    <Column name="YEARSTARTED" id="tblCol_65fd8ed2d3e44f59a70acb7bef5c64dc" index="43" datatype="Text" />
+    <Column name="SICDESC" id="tblCol_d8b837a5140f49179d10f4172199313e" index="44" datatype="Text" />
+    <Column name="DANDBCOMPANYID" id="tblCol_1d6ec2312d184c1991a38e683af069ec" index="45" datatype="Text" />
+    <Column name="CUSTOMERPRIORITY" id="tblCol_b1ab873abd234a389ca7086ef85a604a" index="46" datatype="Text" />
+    <Column name="SLA" id="tblCol_ad341a1f510545c2b09794886c35dd56" index="47" datatype="Text" />
+    <Column name="ACTIVE" id="tblCol_c18e5ecf37184ef3ba917ba9ecb2ae81" index="48" datatype="Text" />
+    <Column name="NUMBEROFLOCATIONS" id="tblCol_2e6eb050c0cf403c86e1faee45cdd6ef" index="49" datatype="Integer" />
+    <Column name="UPSELLOPPORTUNITY" id="tblCol_ccc109fe19d244ec8b3b0030681edd2b" index="50" datatype="Text" />
+    <Column name="SLASERIALNUMBER" id="tblCol_21d25329efbb488cac52b12abdff9287" index="51" datatype="Text" />
+    <Column name="SLAEXPIRATIONDATE" id="tblCol_109d15e7ea3141f380765fc57dfb746c" index="52" datatype="Text" />
+    <Column name="CUSTOM1" id="tblCol_536b9b9607384320a045023860cb604f" index="53" datatype="Text" />
+    <Column name="CUSTOMERPRIORITY__C" id="tblCol_8160a7d6f8ff4a67b464f12511a21b25" index="54" datatype="Text" />
+    <Column name="SLA__C" id="tblCol_ce4f359200d84b3185ff46ad44635cb7" index="55" datatype="Text" />
+    <Column name="ACTIVE__C" id="tblCol_622e7b6d8ef3439282893d560937b0d5" index="56" datatype="Text" />
+    <Column name="NUMBEROFLOCATIONS__C" id="tblCol_fa4ebf7da39e41baa73d18c291cca1e4" index="57" datatype="Integer" />
+    <Column name="UPSELLOPPORTUNITY__C" id="tblCol_34bd30ffcf254139bbf8c52938baa9c2" index="58" datatype="Text" />
+    <Column name="SLASERIALNUMBER__C" id="tblCol_1238b17b4c7b4e7bad562178c1d78d1a" index="59" datatype="Text" />
+    <Column name="SLAEXPIRATIONDATE__C" id="tblCol_328650c1cce94fbfb0e30d303d54e78e" index="60" datatype="Text" />
+    <Column name="CUSTOM1__C" id="tblCol_8ff403440c4f4f749b80e6e67cf5ad14" index="61" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

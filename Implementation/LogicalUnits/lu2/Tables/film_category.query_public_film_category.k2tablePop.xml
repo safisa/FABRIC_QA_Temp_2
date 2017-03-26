@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_public_film_category</ID>
+  <PopulationObjectName>query_public_film_category</PopulationObjectName>
+  <TableName>film_category</TableName>
+  <RootItemID>query_query_public_film_category</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="film_id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="category_id" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="last_update" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_public_film_category" name="query_public_film_category" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbPostgreSQL_loc_dvd">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="film_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="category_id" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="last_update" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM public.film_category]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="10" fromNodeOrder="0" fromItemID="query_query_public_film_category" fromColID="queryCol_0" toItemID="tbl_film_category" toColID="tblCol_ecfa13407f88472c84e932a84dbd4811" />
+    <Link partId="11" fromNodeOrder="0" fromItemID="query_query_public_film_category" fromColID="queryCol_1" toItemID="tbl_film_category" toColID="tblCol_34831babc99f4771b51d10eda6b588b7" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="query_query_public_film_category" fromColID="queryCol_2" toItemID="tbl_film_category" toColID="tblCol_96c742ac476f4d8890386e42cd014f31" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

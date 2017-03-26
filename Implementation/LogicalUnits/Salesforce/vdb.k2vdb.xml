@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="4.0.0.1">
+  <Name>vdb</Name>
+  <RootView>ACCOUNT</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>ACCOUNT</Table>
+    <Table>ACCOUNTHISTORY</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="ACCOUNT">
+      <Populations>
+        <Population id="query_ACCOUNT" name="query_ACCOUNT" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="ACCOUNTHISTORY">
+      <Populations>
+        <Population id="query_ACCOUNTHISTORY" name="query_ACCOUNTHISTORY" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="refZipCodes" />
+    <Item active="false" name="yp_country_information" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="126">
+      <From tableType="TableObject" table="ACCOUNT" column="ROW_ID" columnId="tblCol_996b0ec3b1ec496bb6cafc430cbeae4b" />
+      <To tableType="TableObject" table="ACCOUNTHISTORY" populationObjectName="query_ACCOUNTHISTORY" column="ACCOUNTID" columnId="queryCol_1" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

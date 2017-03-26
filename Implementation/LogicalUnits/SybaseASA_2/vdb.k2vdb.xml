@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0.3.0">
+  <Name>vdb</Name>
+  <RootView>Employees</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>Employees</Table>
+    <Table>Departments</Table>
+    <Table>SalesOrders</Table>
+    <Table>SalesOrderItems</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="Employees">
+      <Populations>
+        <Population id="query_Employees" name="query_Employees" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="Departments">
+      <Populations>
+        <Population id="query_Departments" name="query_Departments" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="SalesOrders">
+      <Populations>
+        <Population id="query_SalesOrders" name="query_SalesOrders" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="SalesOrderItems">
+      <Populations>
+        <Population id="query_SalesOrderItems" name="query_SalesOrderItems" order="3" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="refZipCodes" />
+    <Item active="false" name="yp_country_information" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="180">
+      <From tableType="TableObject" table="Employees" column="EmployeeID" columnId="tblCol_2c38240cd85a449ebd9773992bc93e90" />
+      <To tableType="TableObject" table="Departments" populationObjectName="query_Departments" column="DepartmentHeadID" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="181">
+      <From tableType="TableObject" table="Employees" column="EmployeeID" columnId="tblCol_2c38240cd85a449ebd9773992bc93e90" />
+      <To tableType="TableObject" table="SalesOrders" populationObjectName="query_SalesOrders" column="SalesRepresentative" columnId="queryCol_5" />
+    </Relation>
+    <Relation id="182">
+      <From tableType="TableObject" table="SalesOrders" column="ID" columnId="tblCol_3e45c74e35de403caac741a12d3d2ded" />
+      <To tableType="TableObject" table="SalesOrderItems" populationObjectName="query_SalesOrderItems" column="ID" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

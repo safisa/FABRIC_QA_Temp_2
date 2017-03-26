@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>popRefZipCode</ID>
+  <PopulationObjectName>popRefZipCode</PopulationObjectName>
+  <TableName>refZipCodes</TableName>
+  <RootItemID>f_45</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="folderPath" id="fi_45.0" dataType="String" index="0" />
+    <Arg name="folderPathDebug" id="fi_45.1" dataType="String" index="1" />
+    <Arg name="regexFilter" id="fi_45.2" dataType="String" index="2" />
+    <Arg name="recordDelimiter" id="fi_45.3" dataType="String" index="3" />
+    <Arg name="fieldDelimiter" id="fi_45.4" dataType="String" index="4" />
+    <Arg name="enclosingChar" id="fi_45.5" dataType="String" index="5" />
+    <Arg name="skipHeaderRows" id="fi_45.6" dataType="Integer" index="6" />
+    <Arg name="skipFooterRows" id="fi_45.7" dataType="Integer" index="7" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_45" name="k2_FolderParser" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="k2_FolderParser.k2function.xml">
+      <InputsList>
+        <Input id="fi_45.0" name="folderPath" defaultValue="/usr/local/k2view/k2files" />
+        <Input id="fi_45.1" name="folderPathDebug" defaultValue="C:\K2View" />
+        <Input id="fi_45.2" name="regexFilter" defaultValue="zip_code_database.csv" />
+        <Input id="fi_45.3" name="recordDelimiter" defaultValue="\n" />
+        <Input id="fi_45.4" name="fieldDelimiter" defaultValue="," />
+        <Input id="fi_45.5" name="enclosingChar" defaultValue="&quot;" />
+        <Input id="fi_45.6" name="skipHeaderRows" defaultValue="1" />
+        <Input id="fi_45.7" name="skipFooterRows" defaultValue="0" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_45.0" name="result" />
+      </OutputsList>
+    </Item>
+    <Item id="f_67" name="fnExtractZipInfo" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="fnExtractZipInfo.k2function.xml">
+      <InputsList>
+        <Input id="fi_67.0" name="iMap" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_67.0" name="zip" />
+        <Output id="fo_67.1" name="type" />
+        <Output id="fo_67.2" name="primary_city" />
+        <Output id="fo_67.3" name="acceptable_cities" />
+        <Output id="fo_67.4" name="unacceptable_cities" />
+        <Output id="fo_67.5" name="state" />
+        <Output id="fo_67.6" name="county" />
+        <Output id="fo_67.7" name="timezone" />
+        <Output id="fo_67.8" name="area_codes" />
+        <Output id="fo_67.9" name="latitude" />
+        <Output id="fo_67.10" name="longitude" />
+        <Output id="fo_67.11" name="world_region" />
+        <Output id="fo_67.12" name="country" />
+        <Output id="fo_67.13" name="decommissioned" />
+        <Output id="fo_67.14" name="estimated_population" />
+        <Output id="fo_67.15" name="notes" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="100" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.0" toItemID="tbl_refZipCodes" toColID="tblCol_4dedf6db5a764268893cae699cd46462" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="f_45" fromColID="fo_45.0" toItemID="f_67" toColID="fi_67.0" />
+    <Link partId="101" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.1" toItemID="tbl_refZipCodes" toColID="tblCol_44ac0578b72b436ba60a38afa5402575" />
+    <Link partId="102" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.2" toItemID="tbl_refZipCodes" toColID="tblCol_466d33791a7f43cbbb218f18e93c55b8" />
+    <Link partId="103" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.3" toItemID="tbl_refZipCodes" toColID="tblCol_f1ce7ac4580c490fac7a103f6a09a84a" />
+    <Link partId="104" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.4" toItemID="tbl_refZipCodes" toColID="tblCol_c684f08f606243989f98db1c5bf6d36d" />
+    <Link partId="105" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.5" toItemID="tbl_refZipCodes" toColID="tblCol_9b1d62f60cd847f5a82c93a8986e39f2" />
+    <Link partId="106" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.6" toItemID="tbl_refZipCodes" toColID="tblCol_d365ee6b9bed4597a6a1e11dc62db0b4" />
+    <Link partId="107" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.7" toItemID="tbl_refZipCodes" toColID="tblCol_a7b98d0f2c9e459c81f733405f20fdda" />
+    <Link partId="108" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.8" toItemID="tbl_refZipCodes" toColID="tblCol_ac8843be64894e03a51cd14be4e1072d" />
+    <Link partId="109" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.9" toItemID="tbl_refZipCodes" toColID="tblCol_2c47cc27dd2b4d87a9d2400b208f6a1a" />
+    <Link partId="110" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.10" toItemID="tbl_refZipCodes" toColID="tblCol_7ced63c4c60649d3ae9850041e557a94" />
+    <Link partId="111" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.11" toItemID="tbl_refZipCodes" toColID="tblCol_ec6e75bf89a44127adc62741c368c157" />
+    <Link partId="112" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.12" toItemID="tbl_refZipCodes" toColID="tblCol_a343af46dd1644cb818c1dd6840899b6" />
+    <Link partId="113" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.13" toItemID="tbl_refZipCodes" toColID="tblCol_304b874fe74d478aa3d6654e7f5e8ba1" />
+    <Link partId="114" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.14" toItemID="tbl_refZipCodes" toColID="tblCol_4a798aab922f44caaafe7c95dc73ff80" />
+    <Link partId="115" fromNodeOrder="1" fromItemID="f_67" fromColID="fo_67.15" toItemID="tbl_refZipCodes" toColID="tblCol_aa49c87cd3ec4f069b9bcbdcd18a5804" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

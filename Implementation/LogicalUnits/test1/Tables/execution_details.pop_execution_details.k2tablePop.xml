@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>pop_execution_details</ID>
+  <PopulationObjectName>pop_execution_details</PopulationObjectName>
+  <TableName>execution_details</TableName>
+  <RootItemID>f_23</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="input" id="fi_23.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_23" name="fnPop_execution_details" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="fnPop_execution_details.k2function.xml">
+      <InputsList>
+        <Input id="fi_23.0" name="input" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_23.0" name="process_id" />
+        <Output id="fo_23.1" name="deployment_id" />
+        <Output id="fo_23.2" name="dep_details_id" />
+        <Output id="fo_23.3" name="execution_id" />
+        <Output id="fo_23.4" name="execution_detail_id" />
+        <Output id="fo_23.5" name="server_name" />
+        <Output id="fo_23.6" name="object_name" />
+        <Output id="fo_23.7" name="process_type" />
+        <Output id="fo_23.8" name="flow_id" />
+        <Output id="fo_23.9" name="parents" />
+        <Output id="fo_23.10" name="active" />
+        <Output id="fo_23.11" name="number_of_parents" />
+        <Output id="fo_23.12" name="number_of_parents_completed" />
+        <Output id="fo_23.13" name="status" />
+        <Output id="fo_23.14" name="children_to_execute_on_failure" />
+        <Output id="fo_23.15" name="comment" />
+        <Output id="fo_23.16" name="start_time" />
+        <Output id="fo_23.17" name="end_time" />
+        <Output id="fo_23.18" name="os_pid" />
+        <Output id="fo_23.19" name="error_summary" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="45" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.0" toItemID="tbl_execution_details" toColID="tblCol_62664e50cbd2493282c6b61c7621c2c0" />
+    <Link partId="46" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.1" toItemID="tbl_execution_details" toColID="tblCol_50a1f6d4a83845cab17a6892368b4f92" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.2" toItemID="tbl_execution_details" toColID="tblCol_34e6ddd19c9a4c098ce1c9f874c2fe7d" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.3" toItemID="tbl_execution_details" toColID="tblCol_bda7dc70b97e4cb788c210f5959f5493" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.4" toItemID="tbl_execution_details" toColID="tblCol_feaa0156c1d349009ad8e3ee10dec8c7" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.5" toItemID="tbl_execution_details" toColID="tblCol_e1ab1fb3a60342c5a509274dbdf82365" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.6" toItemID="tbl_execution_details" toColID="tblCol_5812e1a885c94a93b060a925802a8ecd" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.7" toItemID="tbl_execution_details" toColID="tblCol_dc9d6da7f7404224b7e19de151dc12fc" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.8" toItemID="tbl_execution_details" toColID="tblCol_8e0bc22404264015bfbdab162eb47b5d" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.9" toItemID="tbl_execution_details" toColID="tblCol_ad681ed7b9a741c9afca2ef6e8be1de3" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.10" toItemID="tbl_execution_details" toColID="tblCol_242280c2aba6417399986dd3e89e43a3" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.11" toItemID="tbl_execution_details" toColID="tblCol_d21baf8e610e45f99534fe6146b95f24" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.12" toItemID="tbl_execution_details" toColID="tblCol_0d03bf99fba34c45a2006a6c1bbca44e" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.13" toItemID="tbl_execution_details" toColID="tblCol_ccfd79c00e774072b7238d605c55d7d5" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.14" toItemID="tbl_execution_details" toColID="tblCol_3fef8dbe9bfb4098909c8edd6c1d59d6" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.15" toItemID="tbl_execution_details" toColID="tblCol_94954ff3b43a41009742f1f8867d9027" />
+    <Link partId="61" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.16" toItemID="tbl_execution_details" toColID="tblCol_04dd027fb0ca4fb5ac543361da5a5928" />
+    <Link partId="62" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.17" toItemID="tbl_execution_details" toColID="tblCol_a2b5f4880fb54f9eb5d07093a0a33bb3" />
+    <Link partId="63" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.18" toItemID="tbl_execution_details" toColID="tblCol_e9e2159ccb3b44db87734ec54db143f4" />
+    <Link partId="64" fromNodeOrder="0" fromItemID="f_23" fromColID="fo_23.19" toItemID="tbl_execution_details" toColID="tblCol_d9de0557c1c64a71b23d06818a7c9853" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SalesOrderItems</Name>
+  <ID>tbl_SalesOrderItems</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_32d69cac33de4f4b86b309f166db5c6d" index="0" datatype="Integer" mandatory="true" />
+    <Column name="LineID" id="tblCol_450438432ace453380cec8a9027b757d" index="1" datatype="Integer" mandatory="true" />
+    <Column name="ProductID" id="tblCol_39dfafb6b3a84fbabc78fd285e8fad60" index="2" datatype="Integer" mandatory="true" />
+    <Column name="Quantity" id="tblCol_42d0373e81664fa3bf0b866ab0b5d066" index="3" datatype="Integer" mandatory="true" />
+    <Column name="ShipDate" id="tblCol_b4604dff27774d26b9dcebf8eb63a684" index="4" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

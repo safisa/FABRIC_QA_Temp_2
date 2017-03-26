@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0.2.0">
+  <Name>vdb</Name>
+  <RootView>FBNK_CUSTOMER</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>FBNK_CUSTOMER</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="FBNK_CUSTOMER">
+      <Populations>
+        <Population id="query_FBNK_CUSTOMER" name="query_FBNK_CUSTOMER" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="refZipCodes" />
+    <Item active="false" name="yp_country_information" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations />
+</VirtualDB>

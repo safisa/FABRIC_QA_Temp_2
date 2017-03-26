@@ -1,0 +1,5 @@
+﻿<Graph name="pars_RT.pop_RT.k2tablePop.bin" lastPartID="6">
+  <TableNode partID="0" name="pars_RT" pos="364.324127 17.9270859" width="309.324158" />
+  <ParserRecordTypeTargetNode partID="4" name="RT" pos="9.999985 18.9635429" size="309.324127 62.0729141" parserName="pars" isTargetNode="false" isRoot="true" deleteRecordsAfterSync="false" />
+  <Link partID="6" from="0" to="1" pointsArr="319.3241 50 329.3241 50 354.324127 48.9635429 364.324127 48.9635429" fromNodePartID="4" fromNodeColumnName="result" toNodePartID="0" toNodeColumnName="result" />
+</Graph>

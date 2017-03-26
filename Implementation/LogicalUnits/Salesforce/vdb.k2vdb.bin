@@ -1,0 +1,9 @@
+﻿<Graph version="4.0.0.1" name="vdb.k2vdb.bin" lastPartID="954">
+  <Node id="0" partID="0" name="ACCOUNT" isRootView="true" pos="103 188" size="257 138.5469" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ACCOUNT","TablePopulationPropertiesList":[{"ID":"query_ACCOUNT","Name":"query_ACCOUNT","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="111" name="ACCOUNTHISTORY" isRootView="false" pos="512 131" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"ACCOUNTHISTORY","TablePopulationPropertiesList":[{"ID":"query_ACCOUNTHISTORY","Name":"query_ACCOUNTHISTORY","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="2" to="3" partID="126" linkType="Database" pointsArr="360 250.636719 370 250.636719 502 209.727859 512 209.727859" fromNodePartID="0" fromNodeColumnName="ROW_ID" toNodePartID="111" toNodeColumnName="ACCOUNTID" toNodePopulationObjectName="query_ACCOUNTHISTORY" />
+</Graph>

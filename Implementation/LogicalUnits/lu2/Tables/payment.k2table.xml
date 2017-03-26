@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>payment</Name>
+  <ID>tbl_payment</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="payment_id" id="tblCol_50bd7da2234a4f1e9ac5edfde721c68c" index="0" datatype="Integer" mandatory="true" />
+    <Column name="customer_id" id="tblCol_788ab13b86fd4e9790303b41a847a72b" index="1" datatype="Integer" mandatory="true" />
+    <Column name="staff_id" id="tblCol_1662ebf6c720443ea9fe69644e396cad" index="2" datatype="Integer" mandatory="true" />
+    <Column name="rental_id" id="tblCol_c1c68a7f9c8f43378b8f52b41f812130" index="3" datatype="Integer" mandatory="true" />
+    <Column name="amount" id="tblCol_b65577ad346a445d881257d5cf31de45" index="4" datatype="Real" mandatory="true" />
+    <Column name="payment_date" id="tblCol_b8845d7fd546423fa802118fea8087e0" index="5" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_50bd7da2234a4f1e9ac5edfde721c68c" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

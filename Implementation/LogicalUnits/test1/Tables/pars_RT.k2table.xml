@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>pars_RT</Name>
+  <ID>tbl_pars_RT</ID>
+  <LazyDataUpdate performEvery="1.00:00:00">
+    <TruncateBeforeSync>false</TruncateBeforeSync>
+  </LazyDataUpdate>
+  <Columns>
+    <Column name="result" id="tblCol_9a454c097c204b50b0422a47167dbab8" index="0" datatype="BLOB" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

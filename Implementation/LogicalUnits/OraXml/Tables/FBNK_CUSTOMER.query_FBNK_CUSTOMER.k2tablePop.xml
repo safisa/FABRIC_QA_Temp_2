@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_FBNK_CUSTOMER</ID>
+  <PopulationObjectName>query_FBNK_CUSTOMER</PopulationObjectName>
+  <TableName>FBNK_CUSTOMER</TableName>
+  <RootItemID>query_query_FBNK_CUSTOMER</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="RECID" id="queryCol_0" dataType="Text" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_FBNK_CUSTOMER" name="query_FBNK_CUSTOMER" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbOracle_126_un">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="RECID" dataType="Text" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="XMLRECORD" dataType="Text" index="1" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM FBNK_CUSTOMER]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="8" fromNodeOrder="0" fromItemID="query_query_FBNK_CUSTOMER" fromColID="queryCol_0" toItemID="tbl_FBNK_CUSTOMER" toColID="tblCol_cd3e357da39d471d9e04667e569356d3" />
+    <Link partId="9" fromNodeOrder="0" fromItemID="query_query_FBNK_CUSTOMER" fromColID="queryCol_1" toItemID="tbl_FBNK_CUSTOMER" toColID="tblCol_366f21c47e0c46709bbccb47782a8cc1" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

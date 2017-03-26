@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnSybaseIQ" name="dbSybase_ASA" type="Sybase_IQ" version="3.0.0.1">
+  <Active>true</Active>
+  <DataSource>10.21.2.40</DataSource>
+  <PortNum>2638</PortNum>
+  <DataBase />
+  <UserId>DBA</UserId>
+  <Password>B8DyizE6+YaOgX19fLs1MQOuqyrIqLcRuSfBWSVoD10=:vX8AV+RceKtOG0Q2bNS12HujQXsSyj5BLEaP/PssAXM=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>Host=10.21.2.40:2638;ServerName='demo';DatabaseName='';UserID='DBA';Password='[PASSWORD]';</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:sybase:Tds:10.21.2.40:2638/demo</ConnectionStringServerSide>
+  <CommandList />
+  <ServerName>demo</ServerName>
+</DBConn>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="dbOracle_126" type="Oracle" version="3.0.2.0">
+  <Active>true</Active>
+  <DataSource>10.21.1.126</DataSource>
+  <PortNum>1521</PortNum>
+  <DataBase>cdb1</DataBase>
+  <UserId>SOURCE</UserId>
+  <Password>Xxl1lYvZJdXE1VcoWkmMOG33ntF245TYUBFaxYC1FGI=:1KYPodUwX6/qVOPz45lptD1TeBFi+ZElBwoLZFVrKhM=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=10.21.1.126)(PORT=1521)))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=cdb1)));User Id=SOURCE;Password=[PASSWORD];</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:oracle:thin:@10.21.1.126:1521/cdb1</ConnectionStringServerSide>
+  <SchemaFilter>SOURCE</SchemaFilter>
+  <CommandList />
+</DBConn>

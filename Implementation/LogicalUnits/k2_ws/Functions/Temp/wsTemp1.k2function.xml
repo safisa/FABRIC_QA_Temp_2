@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.1.0.0">
+  <Name>wsTemp1</Name>
+  <ID>Temp.wsTemp1</ID>
+  <Category>Temp</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>WebService</FunctionType>
+  <FunctionType2>WebService</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>addCustomResponseHeader("key1", "val1");
+setCustomResponseHeader("key1", "val2");
+setCustomResponseHeader("key2", "val2_2");
+String str = getCustomResponseHeader("key1");
+setCustomResponseHeader("key2_after_change", str);
+//clearCustomResponseHeaders();
+return getCustomResponseHeaders();
+//getRequestHeaders();
+//String str3 = getRequestHeader("");
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="val" id="fo.Temp.wsTemp1.0" index="0" dataType="Object" />
+  </OutputParams>
+</KFunction>

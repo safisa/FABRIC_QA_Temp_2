@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>populate_LU_PARAMS</ID>
+  <PopulationObjectName>populate_LU_PARAMS</PopulationObjectName>
+  <TableName>LU_PARAMS</TableName>
+  <RootItemID>f_80</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="ENTITY_ID" id="fi_80.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_80" name="fnRootLuParams" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="fnRootLuParams.k2function.xml">
+      <InputsList>
+        <Input id="fi_80.0" name="ENTITY_ID" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_80.0" name="ENTITY_ID" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="145" fromNodeOrder="0" fromItemID="f_80" fromColID="fo_80.0" toItemID="tbl_LU_PARAMS" toColID="tblCol_12cb4021e87c4145a589a0eccb73e00c" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

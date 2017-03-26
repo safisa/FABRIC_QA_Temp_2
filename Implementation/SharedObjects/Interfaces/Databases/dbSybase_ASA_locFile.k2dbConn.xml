@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnSybaseIQ" name="dbSybase_ASA_locFile" type="Sybase_IQ" version="3.0.0.1">
+  <Active>false</Active>
+  <DataSource>localhost</DataSource>
+  <PortNum>2638</PortNum>
+  <UserId>DBA</UserId>
+  <Password>F1Kj7WKsoO52S4zS+MCZGV4u2onEKBPEQ7NZfu8bOUE=:FOPFSEJ4w4sEXXozmVaNYB1AjOUdpBuUThCE2hozl8U=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <IsCustomConnectionString>true</IsCustomConnectionString>
+  <ConnectionStringClient>ServerName=demo17;UserID=DBA;Password='[PASSWORD]';Autostop=Yes;DatabaseFile='C:\Users\Public\Documents\SQL Anywhere 17\Samples\demo.db'</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:sybase:Tds:localhost:2638/demo17</ConnectionStringServerSide>
+  <CommandList />
+  <ServerName>demo17</ServerName>
+</DBConn>

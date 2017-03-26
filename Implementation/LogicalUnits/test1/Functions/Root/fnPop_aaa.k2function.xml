@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.10">
+  <Name>fnPop_aaa</Name>
+  <ID>Root.fnPop_aaa</ID>
+  <Category>Root</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RootFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT PATIENT_ID, SSN, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIP, STATE, COUNTRY FROM PATIENT";
+Object[] valuesArr = null;
+ResultSetWrapper rs = DBQuery("HIS_DB", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+
+rs.closeStmt();
+</FunctionBody>
+  <IsSyntaxValid>false</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="input" id="fi.Root.fnPop_aaa.0" index="0" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="PATIENT_ID" id="fo.Root.fnPop_aaa.0" index="0" dataType="String" />
+    <Output name="SSN" id="fo.Root.fnPop_aaa.1" index="1" dataType="String" />
+    <Output name="FIRST_NAME" id="fo.Root.fnPop_aaa.2" index="2" dataType="String" />
+    <Output name="LAST_NAME" id="fo.Root.fnPop_aaa.3" index="3" dataType="String" />
+    <Output name="ADDRESS" id="fo.Root.fnPop_aaa.4" index="4" dataType="String" />
+    <Output name="CITY" id="fo.Root.fnPop_aaa.5" index="5" dataType="String" />
+    <Output name="ZIP" id="fo.Root.fnPop_aaa.6" index="6" dataType="String" />
+    <Output name="STATE" id="fo.Root.fnPop_aaa.7" index="7" dataType="String" />
+    <Output name="COUNTRY" id="fo.Root.fnPop_aaa.8" index="8" dataType="String" />
+  </OutputParams>
+</KFunction>

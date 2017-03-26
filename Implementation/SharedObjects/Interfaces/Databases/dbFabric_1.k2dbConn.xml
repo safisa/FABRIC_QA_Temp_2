@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnFabric" name="dbFabric_1" type="Fabric" version="4.0.0.2">
+  <Active>true</Active>
+  <HasMultiSources>true</HasMultiSources>
+  <DataSource>fffff</DataSource>
+  <PortNum>9042</PortNum>
+  <DataBase>sss</DataBase>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>DRIVER={DataStax Cassandra ODBC Driver};Host=fffff;Port=9042;AuthMech=1;UID=;PWD=[PASSWORD];DefaultKeyspace=sss;QueryMode=1;</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:k2view://fffff:9042/sss?loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('fffff')</ConnectionStringServerSide>
+  <SchemaFilter>k2_ref,sss</SchemaFilter>
+  <AutomaticMetadataLoading>false</AutomaticMetadataLoading>
+  <OfflineMode>true</OfflineMode>
+  <CommandList />
+  <DBSourceList>
+    <DBSource index="0" name="ffff" active="true">
+      <Host>fffffhhhhh</Host>
+      <Port>9042</Port>
+      <DataBase>sss</DataBase>
+      <ConnectionStringServerSide>jdbc:k2view://fffffhhhhh:9042/sss?loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('fffffhhhhh')</ConnectionStringServerSide>
+      <MaxConnectionsNumber>60</MaxConnectionsNumber>
+    </DBSource>
+  </DBSourceList>
+</DBConn>

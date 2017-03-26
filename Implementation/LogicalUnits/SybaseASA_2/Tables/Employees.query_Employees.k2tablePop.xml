@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Employees</ID>
+  <PopulationObjectName>query_Employees</PopulationObjectName>
+  <TableName>Employees</TableName>
+  <RootItemID>query_query_Employees</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="EmployeeID" id="queryCol_0" dataType="Integer" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Employees" name="query_Employees" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbSybase_ASA_odbc">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="EmployeeID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="ManagerID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="Surname" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="GivenName" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="DepartmentID" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="Street" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="City" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="State" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="Country" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="PostalCode" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="Phone" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="Status" dataType="Text" index="11" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_12" name="SocialSecurityNumber" dataType="Text" index="12" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_13" name="Salary" dataType="Real" index="13" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_14" name="StartDate" dataType="Text" index="14" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_15" name="TerminationDate" dataType="Text" index="15" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_16" name="BirthDate" dataType="Text" index="16" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_17" name="BenefitHealthInsurance" dataType="Integer" index="17" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_18" name="BenefitLifeInsurance" dataType="Integer" index="18" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_19" name="BenefitDayCare" dataType="Integer" index="19" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_20" name="Sex" dataType="Text" index="20" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Employees]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="46" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_0" toItemID="tbl_Employees" toColID="tblCol_2c38240cd85a449ebd9773992bc93e90" />
+    <Link partId="47" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_1" toItemID="tbl_Employees" toColID="tblCol_b4299137155c49b1b0d9ca60ca3096e5" />
+    <Link partId="48" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_2" toItemID="tbl_Employees" toColID="tblCol_1afe1e6b8caf48bdb248edbc04d40ad4" />
+    <Link partId="49" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_3" toItemID="tbl_Employees" toColID="tblCol_6d89642179394cae978b8c3db476e450" />
+    <Link partId="50" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_4" toItemID="tbl_Employees" toColID="tblCol_3a7a08df978541f082b899b1233451e8" />
+    <Link partId="51" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_5" toItemID="tbl_Employees" toColID="tblCol_9e23305a896246b1859e3865e973f796" />
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_6" toItemID="tbl_Employees" toColID="tblCol_f5c71fa062f04a65bcb3a8ddd5b120c5" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_7" toItemID="tbl_Employees" toColID="tblCol_c6f5c3baa67d4042b9de1fa74bf67c8a" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_8" toItemID="tbl_Employees" toColID="tblCol_cc826276034343128a3897a5402e2e60" />
+    <Link partId="55" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_9" toItemID="tbl_Employees" toColID="tblCol_6141c60d84be46f29c115dddcba02aed" />
+    <Link partId="56" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_10" toItemID="tbl_Employees" toColID="tblCol_ebbe90bff11e46169b50c4b3a77cc801" />
+    <Link partId="57" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_11" toItemID="tbl_Employees" toColID="tblCol_003b91bee9664688a62f66392efbc47f" />
+    <Link partId="58" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_12" toItemID="tbl_Employees" toColID="tblCol_f44164c585ce438981e03b413fd27323" />
+    <Link partId="59" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_13" toItemID="tbl_Employees" toColID="tblCol_9f9b2205906b4a35b7eb76d83fee1123" />
+    <Link partId="60" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_14" toItemID="tbl_Employees" toColID="tblCol_7ed038edfca4405aa2ce6c5f57fc66e6" />
+    <Link partId="61" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_15" toItemID="tbl_Employees" toColID="tblCol_1819f9eea45944c982a59a4ae3a0f241" />
+    <Link partId="62" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_16" toItemID="tbl_Employees" toColID="tblCol_96db2cfa7bb7437c8ed8c6b3b349d46f" />
+    <Link partId="63" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_17" toItemID="tbl_Employees" toColID="tblCol_cb455517b53f49528a86b1d75f61b3f3" />
+    <Link partId="64" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_18" toItemID="tbl_Employees" toColID="tblCol_2a4e169afcc2485c91b0934afe94939b" />
+    <Link partId="65" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_19" toItemID="tbl_Employees" toColID="tblCol_b47722ba1596454f81168f7afbfd294c" />
+    <Link partId="66" fromNodeOrder="0" fromItemID="query_query_Employees" fromColID="queryCol_20" toItemID="tbl_Employees" toColID="tblCol_151a9e5810d045008ed599883c943d72" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

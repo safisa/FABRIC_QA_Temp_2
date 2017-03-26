@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_SalesOrders</ID>
+  <PopulationObjectName>query_SalesOrders</PopulationObjectName>
+  <TableName>SalesOrders</TableName>
+  <RootItemID>query_query_SalesOrders</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="CustomerID" id="queryCol_1" dataType="Integer" index="1" />
+    <Arg name="OrderDate" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="FinancialCode" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="Region" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="SalesRepresentative" id="queryCol_5" dataType="Integer" index="5" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_SalesOrders" name="query_SalesOrders" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbSybase_ASA_odbc">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="CustomerID" dataType="Integer" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="OrderDate" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="FinancialCode" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="Region" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="SalesRepresentative" dataType="Integer" index="5" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM SalesOrders]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="16" fromNodeOrder="0" fromItemID="query_query_SalesOrders" fromColID="queryCol_0" toItemID="tbl_SalesOrders" toColID="tblCol_3e45c74e35de403caac741a12d3d2ded" />
+    <Link partId="17" fromNodeOrder="0" fromItemID="query_query_SalesOrders" fromColID="queryCol_1" toItemID="tbl_SalesOrders" toColID="tblCol_46f7dd4111da4b3cad380e3b7bdeeef5" />
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_SalesOrders" fromColID="queryCol_2" toItemID="tbl_SalesOrders" toColID="tblCol_a12c2ee124f34d3695fac19a388d083d" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_SalesOrders" fromColID="queryCol_3" toItemID="tbl_SalesOrders" toColID="tblCol_ae065ec7c1544c59bcd94955bf0b8a75" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_SalesOrders" fromColID="queryCol_4" toItemID="tbl_SalesOrders" toColID="tblCol_2691c4ff5dc54262abaaae232d8c294b" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_SalesOrders" fromColID="queryCol_5" toItemID="tbl_SalesOrders" toColID="tblCol_759220a7cd2544e397deb4e36040822f" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

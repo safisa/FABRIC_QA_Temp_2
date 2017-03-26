@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.5">
+  <Name>vdb</Name>
+  <RootView>yp_customer</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>yp_customer</Table>
+    <Table>tblYP_CUSTOMER</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="yp_customer">
+      <Populations>
+        <Population id="query_yp_customer" name="query_yp_customer" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="tblYP_CUSTOMER">
+      <Populations>
+        <Population id="query_YP_CUSTOMER" name="query_YP_CUSTOMER" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="yp_country_information" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="1355">
+      <From tableType="TableObject" table="yp_customer" column="customer_id" columnId="tblCol_6f408acd37c8483bb31fb7b980f20aaf" />
+      <To tableType="TableObject" table="tblYP_CUSTOMER" populationObjectName="query_YP_CUSTOMER" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

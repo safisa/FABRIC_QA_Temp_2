@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0.0.0">
+  <Name>vdb</Name>
+  <RootView>YP_CUSTOMER</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>YP_CUSTOMER</Table>
+    <Table>YP_PRODUCT</Table>
+    <Table>YP_ADDRESS</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="YP_CUSTOMER">
+      <Populations>
+        <Population id="query_PG_YP_CUSTOMER" name="query_PG_YP_CUSTOMER" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_PRODUCT">
+      <Populations>
+        <Population id="query_PG_YP_PRODUCT" name="query_PG_YP_PRODUCT" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="YP_ADDRESS">
+      <Populations>
+        <Population id="query_PG_YP_ADDRESS" name="query_PG_YP_ADDRESS" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="refZipCodes" />
+    <Item active="false" name="yp_country_information" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="751">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_25ab32a1b3924604a0d2c9bf36129e46" />
+      <To tableType="TableObject" table="YP_PRODUCT" populationObjectName="query_PG_YP_PRODUCT" column="CUSTOMER_ID" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="752">
+      <From tableType="TableObject" table="YP_CUSTOMER" column="CUSTOMER_ID" columnId="tblCol_25ab32a1b3924604a0d2c9bf36129e46" />
+      <To tableType="TableObject" table="YP_ADDRESS" populationObjectName="query_PG_YP_ADDRESS" column="CUSTOMER_ID" columnId="queryCol_1" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

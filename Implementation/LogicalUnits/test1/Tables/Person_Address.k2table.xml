@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Person_Address</Name>
+  <ID>tbl_Person_Address</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="AddressID" id="tblCol_b396a6c97db3420c880d0dc0ad1b5076" index="0" datatype="Integer" mandatory="true" />
+    <Column name="AddressLine1" id="tblCol_70482d098a7044ebbfca418320d55f92" index="1" datatype="Text" mandatory="true" />
+    <Column name="AddressLine2" id="tblCol_1cea32ccba7c4399a268ff3db7efb5cd" index="2" datatype="Text" />
+    <Column name="City" id="tblCol_2aa0a81142e64e3881450d34fa0205a2" index="3" datatype="Text" mandatory="true" />
+    <Column name="StateProvinceID" id="tblCol_d401d04e5eea4d268f0ea458fb90d680" index="4" datatype="Integer" mandatory="true" />
+    <Column name="PostalCode" id="tblCol_9297c3ec4b2745e3b035b6019750109b" index="5" datatype="Text" mandatory="true" />
+    <Column name="SpatialLocation" id="tblCol_cff4a9bce4704dfa82a3b3d4db3fe707" index="6" datatype="Text" />
+    <Column name="rowguid" id="tblCol_c9d5d119b4ca42e497018f522202a0d9" index="7" datatype="Text" mandatory="true" />
+    <Column name="ModifiedDate" id="tblCol_36821fb5c3d842c78b8e9d79521fa6c1" index="8" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_b396a6c97db3420c880d0dc0ad1b5076" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

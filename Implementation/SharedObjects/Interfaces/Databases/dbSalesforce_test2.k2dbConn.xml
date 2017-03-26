@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnSalesforce" name="dbSalesforce_test2" type="Salesforce" version="4.0.0.2">
+  <Active>true</Active>
+  <UserId>gabi.ochman@k2view.com</UserId>
+  <Password>EjhOaDQhIj6s8NyH2wUGnQQkTUqb+zjCTLfijBLz2Gw=:RQ5wRtx6k2dWVIHH1PSBD0b+UQ0bVNWA9N9/N9eW3mw=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>DRIVER={k2view 7.1 Salesforce};LogonID=gabi.ochman@k2view.com;Password=[PASSWORD];SecurityToken=4N2g0GrxDppROVXNYKVRF7fC;RefreshSchema=1;</ConnectionStringClient>
+  <IsCustomConnectionStringServerSide>true</IsCustomConnectionStringServerSide>
+  <ConnectionStringServerSide>jdbc:datadirect:sforce://login.salesforce.com;User=gabi.ochman@k2view.com;Password=[PASSWORD];SecurityToken=4N2g0GrxDppROVXNYKVRF7fC;RefreshSchema=true;</ConnectionStringServerSide>
+  <CommandList />
+  <SecurityToken>4N2g0GrxDppROVXNYKVRF7fC</SecurityToken>
+  <ConnectionMode>Connection_String</ConnectionMode>
+</DBConn>

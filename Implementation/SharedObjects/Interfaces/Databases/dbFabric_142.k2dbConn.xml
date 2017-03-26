@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnFabric" name="dbFabric_142" type="Fabric" version="2.4.0.7">
+  <Active>true</Active>
+  <DataSource>10.21.1.142</DataSource>
+  <PortNum>9042</PortNum>
+  <DataBase>PG</DataBase>
+  <UserId>test</UserId>
+  <Password>GJnb+dLAHJS44veGccN8GTjKg+p/12EQIukR978w/z8=:kOHVoQ2OvbN/s7QgALAk/Y3TWzHx0DeYg+YEH0gi9rY=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>DRIVER={DataStax Cassandra ODBC Driver};Host=10.21.1.142;Port=9042;AuthMech=1;UID=test;PWD=[PASSWORD];DefaultKeyspace=PG;QueryMode=2;</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:k2view://10.21.1.142:9042/PG?loadbalancing=com.k2view.cdbms.policy.SingleNodePolicy('10.21.1.142')</ConnectionStringServerSide>
+  <SchemaFilter />
+  <AutomaticMetadataLoading>false</AutomaticMetadataLoading>
+  <OfflineMode>true</OfflineMode>
+  <CommandList />
+</DBConn>

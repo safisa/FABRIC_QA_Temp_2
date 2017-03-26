@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.10">
+  <Name>fnPop_execution_details</Name>
+  <ID>Root.fnPop_execution_details</ID>
+  <Category>Root</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT process_id, deployment_id, dep_details_id, execution_id, execution_detail_id, server_name, object_name, process_type, flow_id, parents, active, number_of_parents, number_of_parents_completed, status, children_to_execute_on_failure, comment, start_time, end_time, os_pid, error_summary FROM k2app.execution_details";
+Object[] valuesArr = null;
+ResultSetWrapper rs = DBQuery("PG_SOURCE", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+
+rs.closeStmt();
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="input" id="fi.Root.fnPop_execution_details.0" index="0" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="process_id" id="fo.Root.fnPop_execution_details.0" index="0" dataType="Long" />
+    <Output name="deployment_id" id="fo.Root.fnPop_execution_details.1" index="1" dataType="Long" />
+    <Output name="dep_details_id" id="fo.Root.fnPop_execution_details.2" index="2" dataType="Long" />
+    <Output name="execution_id" id="fo.Root.fnPop_execution_details.3" index="3" dataType="Long" />
+    <Output name="execution_detail_id" id="fo.Root.fnPop_execution_details.4" index="4" dataType="Long" />
+    <Output name="server_name" id="fo.Root.fnPop_execution_details.5" index="5" dataType="String" />
+    <Output name="object_name" id="fo.Root.fnPop_execution_details.6" index="6" dataType="String" />
+    <Output name="process_type" id="fo.Root.fnPop_execution_details.7" index="7" dataType="String" />
+    <Output name="flow_id" id="fo.Root.fnPop_execution_details.8" index="8" dataType="Long" />
+    <Output name="parents" id="fo.Root.fnPop_execution_details.9" index="9" dataType="String" />
+    <Output name="active" id="fo.Root.fnPop_execution_details.10" index="10" dataType="String" />
+    <Output name="number_of_parents" id="fo.Root.fnPop_execution_details.11" index="11" dataType="Long" />
+    <Output name="number_of_parents_completed" id="fo.Root.fnPop_execution_details.12" index="12" dataType="Long" />
+    <Output name="status" id="fo.Root.fnPop_execution_details.13" index="13" dataType="String" />
+    <Output name="children_to_execute_on_failure" id="fo.Root.fnPop_execution_details.14" index="14" dataType="String" />
+    <Output name="comment" id="fo.Root.fnPop_execution_details.15" index="15" dataType="String" />
+    <Output name="start_time" id="fo.Root.fnPop_execution_details.16" index="16" dataType="String" />
+    <Output name="end_time" id="fo.Root.fnPop_execution_details.17" index="17" dataType="String" />
+    <Output name="os_pid" id="fo.Root.fnPop_execution_details.18" index="18" dataType="Long" />
+    <Output name="error_summary" id="fo.Root.fnPop_execution_details.19" index="19" dataType="String" />
+  </OutputParams>
+</KFunction>

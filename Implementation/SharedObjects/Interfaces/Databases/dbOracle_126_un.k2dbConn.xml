@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnOracle" name="dbOracle_126_un" type="Oracle" version="3.0.2.0">
+  <Active>true</Active>
+  <DataSource>10.21.1.126</DataSource>
+  <PortNum>1521</PortNum>
+  <DataBase>cdb1</DataBase>
+  <UserId>SOURCE</UserId>
+  <Password>Xxl1lYvZJdXE1VcoWkmMOG33ntF245TYUBFaxYC1FGI=:1KYPodUwX6/qVOPz45lptD1TeBFi+ZElBwoLZFVrKhM=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>Provider=Oracle;direct=true;data source='10.21.1.126';user='SOURCE';service name='cdb1';password='[PASSWORD]';port=1521;Number Mappings=((Integer,1,4,System.Int16), (Integer,5,8,System.Int32), (Integer,9,18,System.Int64))</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:oracle:thin:@10.21.1.126:1521/cdb1</ConnectionStringServerSide>
+  <SchemaFilter>SOURCE</SchemaFilter>
+  <CommandList />
+  <ProviderType>DevartUniversal</ProviderType>
+</DBConn>

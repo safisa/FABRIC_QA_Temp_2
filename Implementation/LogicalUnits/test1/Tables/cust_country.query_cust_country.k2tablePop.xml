@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_cust_country</ID>
+  <PopulationObjectName>query_cust_country</PopulationObjectName>
+  <TableName>cust_country</TableName>
+  <RootItemID>query_query_CUST_COUNTRY</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="queryCol_0" dataType="Real" index="0" />
+    <Arg name="COUNTRY_NAME" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="COUNTRY_FLAG_URL" id="queryCol_2" dataType="Text" index="2" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_CUST_COUNTRY" name="query_CUST_COUNTRY" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ludb">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="CUSTOMER_ID" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="COUNTRY_NAME" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="COUNTRY_FLAG_URL" dataType="Text" index="2" />
+      </OutputsList>
+      <SQL><![CDATA[Select YP_COUNTRY_INFORMATION.CUSTOMER_ID,
+  YP_COUNTRY_INFORMATION.COUNTRY_NAME,
+  YP_COUNTRY_INFORMATION.COUNTRY_FLAG_URL
+From test1.YP_CUSTOMER
+  Inner Join YP_COUNTRY_INFORMATION On test1.YP_CUSTOMER.CUSTOMER_ID =
+    YP_COUNTRY_INFORMATION.CUSTOMER_ID]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_0" toItemID="cust_country" toColID="tblCol_aae5a871fed8419f91096f10297e36c3" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_1" toItemID="cust_country" toColID="tblCol_dac0dbe1171c454aaabe4c63a6f6b2fd" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_2" toItemID="cust_country" toColID="tblCol_57852160030946449cd1bfe9bd558781" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

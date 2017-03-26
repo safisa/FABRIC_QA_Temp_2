@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParserMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>p3</Name>
+  <MapType>ParserMap</MapType>
+  <RootItemID>f_35</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <TargetsList>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>aaa</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item id="f_35" name="fnFileSystemReader" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="fnFileSystemReader.k2function.xml">
+          <InputsList>
+            <Input id="fi_35.0" name="interfaceName" />
+            <Input id="fi_35.1" name="regexFilter" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_35.0" name="reader" />
+          </OutputsList>
+        </Item>
+        <Item id="f_39" name="fnFieldsRT1" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="fnFieldsRT1.k2function.xml">
+          <InputsList>
+            <Input id="fi_39.0" name="map" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_39.0" name="col1" />
+            <Output id="fo_39.1" name="col2" />
+            <Output id="fo_39.2" name="col3" />
+            <Output id="fo_39.3" name="col4" />
+          </OutputsList>
+        </Item>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_aaa" name="aaa" nodeOrder="2" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="p3" active="true">
+          <InputsList>
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_0a51338baea24f2e8dce5871a0891c5c" name="col1" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_249d1de1b39e4f8888b61d30ba67d264" name="col2" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_ca108f88a5c84b2dafa213bd9ffcc15c" name="col3" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_bd0dd884f83d41a2a15c5f53f79bfa63" name="col4" dataType="Text" />
+          </InputsList>
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_2aee0cf048a045ca931f07b93cdfde99</RecordTypeKeyColumn>
+          <PkColumnsList />
+          <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+        </Item>
+      </ItemsList>
+      <LinksList>
+        <Link partId="49" fromNodeOrder="1" fromItemID="f_39" fromColID="fo_39.0" toItemID="rt_aaa" toColID="rtCol_0a51338baea24f2e8dce5871a0891c5c" />
+        <Link partId="53" fromNodeOrder="0" fromItemID="f_35" fromColID="fo_35.0" toItemID="f_39" toColID="fi_39.0" />
+        <Link partId="50" fromNodeOrder="1" fromItemID="f_39" fromColID="fo_39.1" toItemID="rt_aaa" toColID="rtCol_249d1de1b39e4f8888b61d30ba67d264" />
+        <Link partId="51" fromNodeOrder="1" fromItemID="f_39" fromColID="fo_39.2" toItemID="rt_aaa" toColID="rtCol_ca108f88a5c84b2dafa213bd9ffcc15c" />
+        <Link partId="52" fromNodeOrder="1" fromItemID="f_39" fromColID="fo_39.3" toItemID="rt_aaa" toColID="rtCol_bd0dd884f83d41a2a15c5f53f79bfa63" />
+      </LinksList>
+      <ParserMapRecordType id="rt_aaa" name="aaa" parentParser="p3">
+        <Active>true</Active>
+        <RecordTypeKeyColumn>rtCol_2aee0cf048a045ca931f07b93cdfde99</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_2aee0cf048a045ca931f07b93cdfde99" name="result" index="0">
+            <DataType>BLOB</DataType>
+          </Column>
+          <Column id="rtCol_0a51338baea24f2e8dce5871a0891c5c" name="col1" index="1">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_249d1de1b39e4f8888b61d30ba67d264" name="col2" index="2">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_ca108f88a5c84b2dafa213bd9ffcc15c" name="col3" index="3">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_bd0dd884f83d41a2a15c5f53f79bfa63" name="col4" index="4">
+            <DataType>Text</DataType>
+          </Column>
+        </Columns>
+        <PkColumns />
+      </ParserMapRecordType>
+    </Target>
+  </TargetsList>
+  <syncEvery>00:00:00</syncEvery>
+  <ExecutionScope>Each_Node</ExecutionScope>
+</ParserMap>

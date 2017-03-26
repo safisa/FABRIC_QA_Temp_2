@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>pop_aaa</ID>
+  <PopulationObjectName>pop_aaa</PopulationObjectName>
+  <TableName>aaa</TableName>
+  <RootItemID>f_6</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="input" id="fi_6.0" dataType="String" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item id="f_6" name="fnPop_aaa" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="fnPop_aaa.k2function.xml">
+      <InputsList>
+        <Input id="fi_6.0" name="input" />
+      </InputsList>
+      <OutputsList>
+        <Output id="fo_6.0" name="PATIENT_ID" />
+        <Output id="fo_6.1" name="ALERGY_ID" />
+        <Output id="fo_6.2" name="MEDICATION_ALLERGY" />
+      </OutputsList>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="11" fromNodeOrder="0" fromItemID="f_6" fromColID="fo_6.0" toItemID="aaa" toColID="tblCol_04d6db2ab91c495badf455702d952d26" />
+    <Link partId="12" fromNodeOrder="0" fromItemID="f_6" fromColID="fo_6.1" toItemID="aaa" toColID="tblCol_d28f1f19a8c54296b2a86806e8fa2b75" />
+    <Link partId="13" fromNodeOrder="0" fromItemID="f_6" fromColID="fo_6.2" toItemID="aaa" toColID="tblCol_06465df1ea7941849d5fd70d6e788134" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_public_rental</ID>
+  <PopulationObjectName>query_public_rental</PopulationObjectName>
+  <TableName>rental</TableName>
+  <RootItemID>query_query_public_rental</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="rental_id" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="rental_date" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="inventory_id" id="queryCol_2" dataType="Integer" index="2" />
+    <Arg name="customer_id" id="queryCol_3" dataType="Integer" index="3" />
+    <Arg name="return_date" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="staff_id" id="queryCol_5" dataType="Integer" index="5" />
+    <Arg name="last_update" id="queryCol_6" dataType="Text" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_public_rental" name="query_public_rental" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbPostgreSQL_loc_dvd">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="rental_id" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="rental_date" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="inventory_id" dataType="Integer" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="customer_id" dataType="Integer" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="return_date" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="staff_id" dataType="Integer" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="last_update" dataType="Text" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM public.rental]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_public_rental" fromColID="queryCol_0" toItemID="tbl_rental" toColID="tblCol_50bb0a6c1ee649c7b5da4326015d4c24" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_public_rental" fromColID="queryCol_1" toItemID="tbl_rental" toColID="tblCol_cd6f2b72c4224e2ebb8b2db3bd90974e" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_public_rental" fromColID="queryCol_2" toItemID="tbl_rental" toColID="tblCol_5ffd784d529248dd9f632aebc805d483" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_public_rental" fromColID="queryCol_3" toItemID="tbl_rental" toColID="tblCol_4a4eb2c706b84901963f9f1fcd98797e" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_public_rental" fromColID="queryCol_4" toItemID="tbl_rental" toColID="tblCol_c851833f48d34302ab1a420ef6ceac87" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_public_rental" fromColID="queryCol_5" toItemID="tbl_rental" toColID="tblCol_787908ae38ea4c15a1f46586583a2983" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_public_rental" fromColID="queryCol_6" toItemID="tbl_rental" toColID="tblCol_bfca7ac55aa44d31aa8e46880db686bb" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

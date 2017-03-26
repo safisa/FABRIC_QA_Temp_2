@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.0.1.0">
+  <Name>getString</Name>
+  <ID>Test.getString</ID>
+  <Category>Test</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>return "getString(Shared Objects) 2 -- " + in1;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="in1" id="fi.Test.getString.0" index="0" dataType="String" />
+    <Input name="in2" id="fi.Test.getString.1" index="1" dataType="String" />
+    <Input name="in3" id="fi.Test.getString.2" index="2" dataType="String" />
+    <Input name="in77" id="fi.Test.getString.3" index="3" dataType="String" />
+    <Input name="in6" id="fi.Test.getString.4" index="4" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="out" id="fo.Test.getString.0" index="0" dataType="String" />
+    <Output name="out2" id="fo.Test.getString.1" index="1" dataType="String" />
+    <Output name="out3" id="fo.Test.getString.2" index="2" dataType="String" />
+  </OutputParams>
+</KFunction>

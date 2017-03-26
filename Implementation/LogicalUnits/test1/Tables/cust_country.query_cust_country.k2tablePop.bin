@@ -1,0 +1,9 @@
+﻿<Graph name="cust_country.query_cust_country.k2tablePop.bin" lastPartID="98">
+  <TableNode partID="0" name="cust_country" pos="407 8.854168" width="309.324463" />
+  <DBQueryNode partID="44" name="ludb" pos="36 27.763031" size="253 96.21875" isRoot="true">
+    <DBQuery>{"Name":"query_CUST_COUNTRY","ID":"query_query_CUST_COUNTRY","ConnName":"ludb","SQL":"Select YP_COUNTRY_INFORMATION.CUSTOMER_ID,\n  YP_COUNTRY_INFORMATION.COUNTRY_NAME,\n  YP_COUNTRY_INFORMATION.COUNTRY_FLAG_URL\nFrom test1.YP_CUSTOMER\n  Inner Join YP_COUNTRY_INFORMATION On test1.YP_CUSTOMER.CUSTOMER_ID =\n    YP_COUNTRY_INFORMATION.CUSTOMER_ID","ColumnsList":[{"ID":"queryCol_0","Name":"CUSTOMER_ID","DataType":"Real","Index":0,"IsInputArgument":true},{"ID":"queryCol_1","Name":"COUNTRY_NAME","DataType":"Text","Index":1,"IsInputArgument":true},{"ID":"queryCol_2","Name":"COUNTRY_FLAG_URL","DataType":"Text","Index":2,"IsInputArgument":true}]}</DBQuery>
+  </DBQueryNode>
+  <Link partID="52" from="0" to="1" pointsArr="289 63.79949 299 63.79949 397 39.890625 407 39.890625" fromNodePartID="44" fromNodeColumnName="CUSTOMER_ID" toNodePartID="0" toNodeColumnName="CUSTOMER_ID" />
+  <Link partID="53" from="2" to="3" pointsArr="289 75.872406 299 75.872406 397 51.96354 407 51.96354" fromNodePartID="44" fromNodeColumnName="COUNTRY_NAME" toNodePartID="0" toNodeColumnName="COUNTRY_NAME" />
+  <Link partID="54" from="4" to="5" pointsArr="289 87.94532 299 87.94532 397 64.03645 407 64.03645" fromNodePartID="44" fromNodeColumnName="COUNTRY_FLAG_URL" toNodePartID="0" toNodeColumnName="COUNTRY_FLAG_URL" />
+</Graph>

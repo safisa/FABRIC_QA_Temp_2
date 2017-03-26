@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.0">
+  <Name>fnPop_film</Name>
+  <ID>Root.fnPop_film</ID>
+  <Category>Root</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType2>RootFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc>dddddd</Desc>
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>String sql = "SELECT * FROM public.film";
+Object[] valuesArr = null;
+ResultSetWrapper rs = DBQuery("dbPostgreSQL_loc_dvd", sql, valuesArr);
+
+for(Object[] row : rs) {
+    yield(row);
+}
+
+rs.closeStmt();
+return;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="film_id" id="fi.Root.fnPop_film.0" index="0" dataType="Long" />
+    <Input name="title" id="fi.Root.fnPop_film.1" index="1" dataType="String" />
+    <Input name="description" id="fi.Root.fnPop_film.2" index="2" dataType="String" />
+    <Input name="release_year" id="fi.Root.fnPop_film.3" index="3" dataType="Long" />
+    <Input name="language_id" id="fi.Root.fnPop_film.4" index="4" dataType="Long" />
+    <Input name="rental_duration" id="fi.Root.fnPop_film.5" index="5" dataType="Long" />
+    <Input name="rental_rate" id="fi.Root.fnPop_film.6" index="6" dataType="Double" />
+    <Input name="length" id="fi.Root.fnPop_film.7" index="7" dataType="Long" />
+    <Input name="replacement_cost" id="fi.Root.fnPop_film.8" index="8" dataType="Double" />
+    <Input name="rating" id="fi.Root.fnPop_film.9" index="9" dataType="String" />
+    <Input name="last_update" id="fi.Root.fnPop_film.10" index="10" dataType="String" />
+    <Input name="special_features" id="fi.Root.fnPop_film.11" index="11" dataType="String" />
+    <Input name="fulltext" id="fi.Root.fnPop_film.12" index="12" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="film_id" id="fo.Root.fnPop_film.0" index="0" dataType="Long" />
+    <Output name="title" id="fo.Root.fnPop_film.1" index="1" dataType="String" />
+    <Output name="description" id="fo.Root.fnPop_film.2" index="2" dataType="String" />
+    <Output name="release_year" id="fo.Root.fnPop_film.3" index="3" dataType="Long" />
+    <Output name="language_id" id="fo.Root.fnPop_film.4" index="4" dataType="Long" />
+    <Output name="rental_duration" id="fo.Root.fnPop_film.5" index="5" dataType="Long" />
+    <Output name="rental_rate" id="fo.Root.fnPop_film.6" index="6" dataType="Double" />
+    <Output name="length" id="fo.Root.fnPop_film.7" index="7" dataType="Long" />
+    <Output name="replacement_cost" id="fo.Root.fnPop_film.8" index="8" dataType="Double" />
+    <Output name="rating" id="fo.Root.fnPop_film.9" index="9" dataType="String" />
+    <Output name="last_update" id="fo.Root.fnPop_film.10" index="10" dataType="String" />
+    <Output name="special_features" id="fo.Root.fnPop_film.11" index="11" dataType="String" />
+    <Output name="fulltext" id="fo.Root.fnPop_film.12" index="12" dataType="String" />
+  </OutputParams>
+</KFunction>

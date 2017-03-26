@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Employees</Name>
+  <ID>tbl_Employees</ID>
+  <EntityId>tblCol_2c38240cd85a449ebd9773992bc93e90</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="EmployeeID" id="tblCol_2c38240cd85a449ebd9773992bc93e90" index="0" datatype="Integer" mandatory="true" />
+    <Column name="ManagerID" id="tblCol_b4299137155c49b1b0d9ca60ca3096e5" index="1" datatype="Integer" />
+    <Column name="Surname" id="tblCol_1afe1e6b8caf48bdb248edbc04d40ad4" index="2" datatype="Text" mandatory="true" />
+    <Column name="GivenName" id="tblCol_6d89642179394cae978b8c3db476e450" index="3" datatype="Text" mandatory="true" />
+    <Column name="DepartmentID" id="tblCol_3a7a08df978541f082b899b1233451e8" index="4" datatype="Integer" mandatory="true" />
+    <Column name="Street" id="tblCol_9e23305a896246b1859e3865e973f796" index="5" datatype="Text" mandatory="true" />
+    <Column name="City" id="tblCol_f5c71fa062f04a65bcb3a8ddd5b120c5" index="6" datatype="Text" mandatory="true" />
+    <Column name="State" id="tblCol_c6f5c3baa67d4042b9de1fa74bf67c8a" index="7" datatype="Text" />
+    <Column name="Country" id="tblCol_cc826276034343128a3897a5402e2e60" index="8" datatype="Text" />
+    <Column name="PostalCode" id="tblCol_6141c60d84be46f29c115dddcba02aed" index="9" datatype="Text" />
+    <Column name="Phone" id="tblCol_ebbe90bff11e46169b50c4b3a77cc801" index="10" datatype="Text" />
+    <Column name="Status" id="tblCol_003b91bee9664688a62f66392efbc47f" index="11" datatype="Text" />
+    <Column name="SocialSecurityNumber" id="tblCol_f44164c585ce438981e03b413fd27323" index="12" datatype="Text" mandatory="true" />
+    <Column name="Salary" id="tblCol_9f9b2205906b4a35b7eb76d83fee1123" index="13" datatype="Real" mandatory="true" />
+    <Column name="StartDate" id="tblCol_7ed038edfca4405aa2ce6c5f57fc66e6" index="14" datatype="Text" mandatory="true" />
+    <Column name="TerminationDate" id="tblCol_1819f9eea45944c982a59a4ae3a0f241" index="15" datatype="Text" />
+    <Column name="BirthDate" id="tblCol_96db2cfa7bb7437c8ed8c6b3b349d46f" index="16" datatype="Text" />
+    <Column name="BenefitHealthInsurance" id="tblCol_cb455517b53f49528a86b1d75f61b3f3" index="17" datatype="Integer" />
+    <Column name="BenefitLifeInsurance" id="tblCol_2a4e169afcc2485c91b0934afe94939b" index="18" datatype="Integer" />
+    <Column name="BenefitDayCare" id="tblCol_b47722ba1596454f81168f7afbfd294c" index="19" datatype="Integer" />
+    <Column name="Sex" id="tblCol_151a9e5810d045008ed599883c943d72" index="20" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

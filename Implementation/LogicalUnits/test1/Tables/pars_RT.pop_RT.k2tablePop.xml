@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>pop_RT</ID>
+  <PopulationObjectName>pop_RT</PopulationObjectName>
+  <TableName>pars_RT</TableName>
+  <RootItemID>rt_RT</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="result" id="rtCol_a73cdb613335477eb5646d6fcd151f28" dataType="BLOB" index="0" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="ParserRecordTypeDataSave" id="rt_RT" name="RT" nodeOrder="0" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="pars" active="false" deleteRecordsAfterSync="false">
+      <InputsList />
+      <OutputsList>
+        <Output xsi:type="ParserRecordTypeDataSaveColumn" id="rtCol_a73cdb613335477eb5646d6fcd151f28" name="result" dataType="BLOB" />
+      </OutputsList>
+      <RecordTypeKeyColumn>rtCol_a73cdb613335477eb5646d6fcd151f28</RecordTypeKeyColumn>
+      <PkColumnsList />
+      <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="6" fromNodeOrder="0" fromItemID="rt_RT" fromColID="rtCol_a73cdb613335477eb5646d6fcd151f28" toItemID="tbl_pars_RT" toColID="tblCol_9a454c097c204b50b0422a47167dbab8" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

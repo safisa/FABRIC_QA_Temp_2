@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ref_YP_COUNTRY_INFORMATION</Name>
+  <ID>tbl_ref_YP_COUNTRY_INFORMATION</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="SEQ" id="tblCol_670028fb1b7c43de8f8c27073e8bac23" index="0" datatype="Real" />
+    <Column name="CUSTOMER_ID" id="tblCol_cf563a9ab4324a808dda07fd6f14dc34" index="1" datatype="Real" />
+    <Column name="COUNTRY_NAME" id="tblCol_1898ff489418433fa82e66077a54bd9f" index="2" datatype="Text" />
+    <Column name="COUNTRY_FLAG_URL" id="tblCol_658abff0a90c43b49c095a5998ff13ba" index="3" datatype="Text" />
+    <Column name="COUNTRY_FLAG1" id="tblCol_e85fc5157fd04bb695247230b4f10df7" index="4" datatype="BLOB" />
+    <Column name="COUNTRY_FLAG2" id="tblCol_177f1ea55e2e48cc84dc3984c4c883d1" index="5" datatype="Text" />
+    <Column name="ADD_INFROMATION" id="tblCol_5b4aca718dc54577b01cfa26aa72d468" index="6" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

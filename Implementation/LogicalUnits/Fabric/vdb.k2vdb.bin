@@ -1,0 +1,13 @@
+﻿<Graph version="3.0.0.0" name="vdb.k2vdb.bin" lastPartID="1552">
+  <Node id="0" partID="0" name="YP_CUSTOMER" isRootView="true" pos="74 127" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_PG_YP_CUSTOMER","Name":"query_PG_YP_CUSTOMER","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="1" partID="465" name="YP_PRODUCT" isRootView="false" pos="614 102" size="257 138.546844" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_PRODUCT","TablePopulationPropertiesList":[{"ID":"query_PG_YP_PRODUCT","Name":"query_PG_YP_PRODUCT","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Node id="2" partID="672" name="YP_ADDRESS" isRootView="false" pos="601 353" size="257 138.546936" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"YP_ADDRESS","TablePopulationPropertiesList":[{"ID":"query_PG_YP_ADDRESS","Name":"query_PG_YP_ADDRESS","Order":2,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+  <Link from="3" to="4" partID="751" linkType="Database" pointsArr="331 173.545578 341 173.545578 604 148.545578 614 148.545578" fromNodePartID="0" fromNodeColumnName="CUSTOMER_ID" toNodePartID="465" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_PG_YP_PRODUCT" />
+  <Link from="3" to="5" partID="752" linkType="Database" pointsArr="331 173.545578 341 173.545578 591 415.636719 601 415.636719" fromNodePartID="0" fromNodeColumnName="CUSTOMER_ID" toNodePartID="672" toNodeColumnName="CUSTOMER_ID" toNodePopulationObjectName="query_PG_YP_ADDRESS" />
+</Graph>

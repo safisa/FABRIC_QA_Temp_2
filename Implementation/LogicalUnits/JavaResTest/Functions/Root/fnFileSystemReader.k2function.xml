@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="4.0.0.1">
+  <Name>fnFileSystemReader</Name>
+  <ID>Root.fnFileSystemReader</ID>
+  <Category>Root</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RootFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>// TOPIC: FileSystem/interfaceName
+
+/*
+InputStreamReader stream = ftpReader(interfaceName);
+
+while ((stream = reader.getNextStream()) != null) {	
+	Object[] row = null;
+	do {
+		row = getStreamMap(stream, enclosingChar.charAt(0), fieldDelimiter.charAt(0), recordDelimiter);
+	    yield(row);
+	} while (row !=null &amp;&amp; row[0] != null);
+	
+	// Drop stream only in running mode
+	if(!inDebug) { // Running mode
+		reader.dropStream(stream);
+	}
+}
+*/
+yield(null);</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>true</IsRootFunction>
+  <InputParams>
+    <Input name="interfaceName" id="fi.Root.fnFileSystemReader.0" index="0" dataType="String" />
+    <Input name="regexFilter" id="fi.Root.fnFileSystemReader.1" index="1" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="reader" id="fo.Root.fnFileSystemReader.0" index="0" dataType="InputStream" />
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParserMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>prsParseFilesFromFMQ</Name>
+  <MapType>ParserMap</MapType>
+  <RootItemID>f_19</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <TargetsList>
+    <Target xsi:type="ParserMapTargetItem">
+      <TargetName>Table1</TargetName>
+      <Module>Parser_Map</Module>
+      <ItemsList>
+        <Item id="f_19" name="fnFetchMessQ" nodeOrder="0" module="Function" mapObjectModule="Function" fileName="fnFetchMessQ.k2function.xml">
+          <InputsList>
+            <Input id="fi_19.0" name="Parser" />
+            <Input id="fi_19.1" name="RecordType" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_19.0" name="Value" />
+          </OutputsList>
+        </Item>
+        <Item id="f_45" name="fnParseFile" nodeOrder="1" module="Function" mapObjectModule="Function" fileName="fnParseFile.k2function.xml">
+          <InputsList>
+            <Input id="fi_45.0" name="in" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_45.0" name="map" />
+          </OutputsList>
+        </Item>
+        <Item id="f_27" name="fnFieldsRT1" nodeOrder="2" module="Function" mapObjectModule="Function" fileName="fnFieldsRT1.k2function.xml">
+          <InputsList>
+            <Input id="fi_27.0" name="map" />
+          </InputsList>
+          <OutputsList>
+            <Output id="fo_27.0" name="col1" />
+            <Output id="fo_27.1" name="col2" />
+            <Output id="fo_27.2" name="col3" />
+            <Output id="fo_27.3" name="col4" />
+          </OutputsList>
+        </Item>
+        <Item xsi:type="ParserRecordTypeDataSave" id="rt_Table1" name="Table1" nodeOrder="3" module="ParserRecordType" mapObjectModule="ParserRecordType" parentParser="prsParseFilesFromFMQ" active="true">
+          <InputsList>
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_82927ee45a814112bd3a73e030a91c38" name="c1" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_de30fb687e4349a8954e06a79d3b2808" name="c2" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_a58240c0c1a74f72ba18d241f47009df" name="c3" dataType="Text" />
+            <Input xsi:type="ParserRecordTypeDataSaveColumnInput" id="rtCol_7e86a20a480848c0a8fca80cf479ca6c" name="c4" dataType="Text" />
+          </InputsList>
+          <OutputsList />
+          <RecordTypeKeyColumn>rtCol_82927ee45a814112bd3a73e030a91c38</RecordTypeKeyColumn>
+          <PkColumnsList />
+          <ClusteringKeyOrder>ASC</ClusteringKeyOrder>
+        </Item>
+      </ItemsList>
+      <LinksList>
+        <Link partId="33" fromNodeOrder="2" fromItemID="f_27" fromColID="fo_27.0" toItemID="rt_Table1" toColID="rtCol_82927ee45a814112bd3a73e030a91c38" />
+        <Link partId="48" fromNodeOrder="1" fromItemID="f_45" fromColID="fo_45.0" toItemID="f_27" toColID="fi_27.0" />
+        <Link partId="37" fromNodeOrder="0" fromItemID="f_19" fromColID="fo_19.0" toItemID="f_45" toColID="fi_45.0" />
+        <Link partId="34" fromNodeOrder="2" fromItemID="f_27" fromColID="fo_27.1" toItemID="rt_Table1" toColID="rtCol_de30fb687e4349a8954e06a79d3b2808" />
+        <Link partId="35" fromNodeOrder="2" fromItemID="f_27" fromColID="fo_27.2" toItemID="rt_Table1" toColID="rtCol_a58240c0c1a74f72ba18d241f47009df" />
+        <Link partId="36" fromNodeOrder="2" fromItemID="f_27" fromColID="fo_27.3" toItemID="rt_Table1" toColID="rtCol_7e86a20a480848c0a8fca80cf479ca6c" />
+      </LinksList>
+      <ParserMapRecordType id="rt_Table1" name="Table1" parentParser="prsParseFilesFromFMQ">
+        <Active>true</Active>
+        <RecordTypeKeyColumn>rtCol_82927ee45a814112bd3a73e030a91c38</RecordTypeKeyColumn>
+        <Columns>
+          <Column id="rtCol_82927ee45a814112bd3a73e030a91c38" name="c1" index="0">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_de30fb687e4349a8954e06a79d3b2808" name="c2" index="1">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_a58240c0c1a74f72ba18d241f47009df" name="c3" index="2">
+            <DataType>Text</DataType>
+          </Column>
+          <Column id="rtCol_7e86a20a480848c0a8fca80cf479ca6c" name="c4" index="3">
+            <DataType>Text</DataType>
+          </Column>
+        </Columns>
+        <PkColumns />
+      </ParserMapRecordType>
+    </Target>
+  </TargetsList>
+  <syncEvery>00:00:00</syncEvery>
+  <ExecutionScope>Each_Node</ExecutionScope>
+</ParserMap>

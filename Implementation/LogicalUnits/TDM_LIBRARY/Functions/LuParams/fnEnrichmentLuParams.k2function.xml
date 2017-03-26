@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.3.0.1">
+  <Name>fnEnrichmentLuParams</Name>
+  <ID>LuParams.fnEnrichmentLuParams</ID>
+  <Category>LuParams</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>//******************************************************//
+//    Function used to update the table LU_PARAMS   	//
+//													  //
+//This function reads the parameters					//
+//configured in the translator trnLuParams -			//
+//execute the query associated -						//
+//and finally run and update statement into LU_PARAMS   //
+//													  //
+//******************************************************//
+
+// Reading the translation data and gettig th queries
+Map&lt;String,Map&lt;String,String&gt;&gt; data = getTranslationsData("trnLuParams");
+String sqlUpdate = "UPDATE LU_PARAMS SET ";
+
+//Check if we have elements in the Translator
+if(data.size() &gt; 0){
+	
+	//Parameters that will be used for Update
+	Object[] parameters = new Object[data.size()];
+	//Counter to insert the parameters in the correct position
+	int i=0;
+	
+	//Getting the values from the LU
+	for(String index: data.keySet()){
+		
+		//String which contains the values returned by the query
+		StringBuilder values = new StringBuilder();
+		
+		Map&lt;String,String&gt; valMap = data.get(index);
+		String columnName = valMap.get("COLUMN_NAME");
+		String sql = valMap.get("SQL").toLowerCase();
+		
+		//Check if SQL query contains distinct and add it if not
+		if (!sql.contains("distinct")){
+			sql = sql.replace("select","select distinct");
+		}
+		
+		//Building the update statement
+		sqlUpdate = sqlUpdate+columnName+"= ?,";
+				
+		//Execution of the query 
+		Object[] valuesArr = null;
+		ResultSetWrapper rs = DBQuery("ludb", sql, valuesArr);
+	
+		values.append("{");
+		for(Object[] row : rs) {
+			//Skip null values
+			if(row[0] != null){
+				values.append("\""+row[0]+"\",");
+			}
+		}
+		
+		//Check if the last element is a comma and remove it
+		if (values.lastIndexOf(",") == values.length()-1){
+			values.deleteCharAt(values.lastIndexOf(",")); 
+		}
+		values.append("}");
+		
+		//If no values, set NULL
+		if (values.toString().equals("{}")){
+			parameters[i] = null;
+		}
+		else{
+			parameters[i] = values.toString();
+		}
+		i++;
+		rs.closeStmt();	
+	}
+	
+	//Remove the last comma of the update statement
+	sqlUpdate = sqlUpdate.substring(0, sqlUpdate.length() - 1);
+	
+	PreparedStatement update = DBPrepareStatement("ludb",sqlUpdate);
+	DBExecutePrepared(update,parameters);
+}
+
+				
+// In case JSON is needed 
+//Create a stream to hold the output
+//ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//PrintStream ps = new PrintStream(baos);
+// Save the old output
+//PrintStream old = System.out;
+// Use the special stream
+//System.setOut(ps);
+//Convert the ResultSetWrapper to JSON string	
+//com.k2view.cdbms.shared.Utils.writeJSON(rs,System.out,true);
+//System.out.flush();
+//System.setOut(old);
+//Get the value from the new ByteArrayOutputStream
+//reportUserMessage(baos.toString());    </FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams />
+</KFunction>

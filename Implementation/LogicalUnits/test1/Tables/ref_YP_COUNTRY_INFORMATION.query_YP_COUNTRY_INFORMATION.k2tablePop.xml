@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_YP_COUNTRY_INFORMATION</ID>
+  <PopulationObjectName>query_YP_COUNTRY_INFORMATION</PopulationObjectName>
+  <TableName>ref_YP_COUNTRY_INFORMATION</TableName>
+  <RootItemID>query_query_YP_COUNTRY_INFORMATION</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="SEQ" id="queryCol_0" dataType="Real" index="0" />
+    <Arg name="CUSTOMER_ID" id="queryCol_1" dataType="Real" index="1" />
+    <Arg name="COUNTRY_NAME" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="COUNTRY_FLAG_URL" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="COUNTRY_FLAG1" id="queryCol_4" dataType="BLOB" index="4" />
+    <Arg name="COUNTRY_FLAG2" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="ADD_INFROMATION" id="queryCol_6" dataType="Text" index="6" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_YP_COUNTRY_INFORMATION" name="query_YP_COUNTRY_INFORMATION" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ludb">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="SEQ" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="CUSTOMER_ID" dataType="Real" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="COUNTRY_NAME" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="COUNTRY_FLAG_URL" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="COUNTRY_FLAG1" dataType="BLOB" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="COUNTRY_FLAG2" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="ADD_INFROMATION" dataType="Text" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM YP_COUNTRY_INFORMATION]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="18" fromNodeOrder="0" fromItemID="query_query_YP_COUNTRY_INFORMATION" fromColID="queryCol_0" toItemID="tbl_ref_YP_COUNTRY_INFORMATION" toColID="tblCol_670028fb1b7c43de8f8c27073e8bac23" />
+    <Link partId="19" fromNodeOrder="0" fromItemID="query_query_YP_COUNTRY_INFORMATION" fromColID="queryCol_1" toItemID="tbl_ref_YP_COUNTRY_INFORMATION" toColID="tblCol_cf563a9ab4324a808dda07fd6f14dc34" />
+    <Link partId="20" fromNodeOrder="0" fromItemID="query_query_YP_COUNTRY_INFORMATION" fromColID="queryCol_2" toItemID="tbl_ref_YP_COUNTRY_INFORMATION" toColID="tblCol_1898ff489418433fa82e66077a54bd9f" />
+    <Link partId="21" fromNodeOrder="0" fromItemID="query_query_YP_COUNTRY_INFORMATION" fromColID="queryCol_3" toItemID="tbl_ref_YP_COUNTRY_INFORMATION" toColID="tblCol_658abff0a90c43b49c095a5998ff13ba" />
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_YP_COUNTRY_INFORMATION" fromColID="queryCol_4" toItemID="tbl_ref_YP_COUNTRY_INFORMATION" toColID="tblCol_e85fc5157fd04bb695247230b4f10df7" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_YP_COUNTRY_INFORMATION" fromColID="queryCol_5" toItemID="tbl_ref_YP_COUNTRY_INFORMATION" toColID="tblCol_177f1ea55e2e48cc84dc3984c4c883d1" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_YP_COUNTRY_INFORMATION" fromColID="queryCol_6" toItemID="tbl_ref_YP_COUNTRY_INFORMATION" toColID="tblCol_5b4aca718dc54577b01cfa26aa72d468" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

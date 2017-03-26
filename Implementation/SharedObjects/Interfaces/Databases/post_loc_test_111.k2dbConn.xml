@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnPostgreSQL" name="post_loc_test_111" type="PostgreSQL" version="4.0.0.2">
+  <Active>true</Active>
+  <DataSource>localhost</DataSource>
+  <PortNum>5432</PortNum>
+  <DataBase>k2view</DataBase>
+  <UserId>k2app</UserId>
+  <Password>Ontx+HQKlwrHiUmhPDd3F3Zb8RWd+w26k0rOwB+uDoM=:orWPnu97B5dDZYsyuta7MRqa/3DW6aVZs5U/Pxly4t4=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <ConnectionStringClient>Server='localhost';Port=5432;Database='k2view';User Id='k2app';Password='[PASSWORD]';</ConnectionStringClient>
+  <ConnectionStringServerSide>jdbc:postgresql://localhost:5432/k2view?stringtype=unspecified</ConnectionStringServerSide>
+  <CommandList />
+  <DBSourceList />
+  <ProviderType>Npgsql</ProviderType>
+</DBConn>

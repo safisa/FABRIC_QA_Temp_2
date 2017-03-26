@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Person_Address</ID>
+  <PopulationObjectName>query_Person_Address</PopulationObjectName>
+  <TableName>Address</TableName>
+  <RootItemID>query_query_Person_Address</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="AddressID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="AddressLine1" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="AddressLine2" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="City" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="StateProvinceID" id="queryCol_4" dataType="Integer" index="4" />
+    <Arg name="PostalCode" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="SpatialLocation" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="rowguid" id="queryCol_7" dataType="Text" index="7" />
+    <Arg name="ModifiedDate" id="queryCol_8" dataType="Text" index="8" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Person_Address" name="query_Person_Address" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="SqlServer_AdvWorks">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="AddressID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="AddressLine1" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="AddressLine2" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="City" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="StateProvinceID" dataType="Integer" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="PostalCode" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="SpatialLocation" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="rowguid" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="ModifiedDate" dataType="Text" index="8" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Person.Address]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="22" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_0" toItemID="tbl_Address" toColID="tblCol_6029c5f513e8442b82e8352498abe61f" />
+    <Link partId="23" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_1" toItemID="tbl_Address" toColID="tblCol_2888d1c8d2d04c439098f45bfb50a4cb" />
+    <Link partId="24" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_2" toItemID="tbl_Address" toColID="tblCol_f332d43d6fa44d2abfc499005ad2da11" />
+    <Link partId="25" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_3" toItemID="tbl_Address" toColID="tblCol_3d41d8cba5624cdda9ca34b56fc74f61" />
+    <Link partId="26" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_4" toItemID="tbl_Address" toColID="tblCol_e9d40350c39646db8b96d16ac0e1cee6" />
+    <Link partId="27" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_5" toItemID="tbl_Address" toColID="tblCol_3910675c78ac4fd5bc364be7b7f3efa9" />
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_6" toItemID="tbl_Address" toColID="tblCol_657b7c62d1454f988058dabda23630cd" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_7" toItemID="tbl_Address" toColID="tblCol_236c40f6ce3840b1b40b96f1d096b834" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_Person_Address" fromColID="queryCol_8" toItemID="tbl_Address" toColID="tblCol_4f8e5e4ae6894ec380c50b302d1a5f70" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

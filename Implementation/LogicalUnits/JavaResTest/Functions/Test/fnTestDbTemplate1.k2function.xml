@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="4.0.0.2">
+  <Name>fnTestDbTemplate1</Name>
+  <ID>Test.fnTestDbTemplate1</ID>
+  <Category>Test</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>//DBExecute("fabric","use Album.*",null);
+
+String FILE_NAME = "Template1.xml";
+
+Map&lt;String,Object&gt; map = new HashMap&lt;&gt;();
+map.put("i_Date", new java.util.Date());
+map.put("i_city", "NEW");
+
+//java.net.URL url = JavaResTest.javaTest1.class.getClassLoader().getResource(FILE_NAME);
+//JavaResTest.javaTest1.readResourceFile("Template1.xml");
+//log.info("URI: {}", url.toURI());
+
+//java.nio.file.Path tmpPath = java.nio.file.Paths.get(System.getProperty("java.io.tmpdir"), FILE_NAME);
+//String tmpFile = tmpPath.toString();
+//try (BufferedWriter bw = new BufferedWriter(new FileWriter(tmpFile))) {
+//	String content = JavaResTest.javaTest1.readResourceFile(FILE_NAME);
+//	bw.write(content);
+//}
+
+//com.k2view.cdbms.shared.DbTemplate template = new com.k2view.cdbms.shared.DbTemplate(tmpFile,queryExecutor);
+//return template.execute(null,"",map);
+
+QueryExecutor queryExecutor = getQueryExecutor("HIS_DB");
+DbTemplate template = new DbTemplate(FILE_NAME,queryExecutor);
+return template.execute(null,"",map);
+</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="res" id="fo.Test.fnTestDbTemplate1.0" index="0" dataType="String" />
+  </OutputParams>
+</KFunction>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>LU_PARAMS</Name>
+  <ID>tbl_LU_PARAMS</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ENTITY_ID" id="tblCol_12cb4021e87c4145a589a0eccb73e00c" index="0" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList>
+    <Enrichment>
+      <Name>fnEnrichmentLuParams</Name>
+      <Type>Function</Type>
+      <TableName>LU_PARAMS</TableName>
+    </Enrichment>
+  </EnrichmentList>
+</TableObject>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ACCOUNTHISTORY</Name>
+  <ID>tbl_ACCOUNTHISTORY</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ROW_ID" id="tblCol_ccb7d93588324c05adfbe98f7fdc5f07" index="0" datatype="Text" mandatory="true" />
+    <Column name="ACCOUNTID" id="tblCol_3ea4ed0aa2034ffeabdbb10197f8ec98" index="1" datatype="Text" mandatory="true" />
+    <Column name="FIELD" id="tblCol_d330c3b270dc48199a4d61358f47eb5d" index="2" datatype="Text" mandatory="true" />
+    <Column name="OLDVALUE" id="tblCol_e9ae2997aaae47c487f5c095a4ec61a5" index="3" datatype="Text" />
+    <Column name="NEWVALUE" id="tblCol_b7038bfcc68542a7a8d137603808a862" index="4" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

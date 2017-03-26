@@ -1,0 +1,5 @@
+﻿<Graph version="3.0.2.0" name="vdb.k2vdb.bin" lastPartID="58">
+  <Node id="0" partID="0" name="FBNK_CUSTOMER" isRootView="true" pos="30 30" size="257 137" listGroupSize="250 100" viewType="Table">
+    <TableProperties>{"TableName":"FBNK_CUSTOMER","TablePopulationPropertiesList":[{"ID":"query_FBNK_CUSTOMER","Name":"query_FBNK_CUSTOMER","Order":1,"Disabled":false,"IsEnrichment":false}]}</TableProperties>
+  </Node>
+</Graph>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PATIENT</Name>
+  <ID>tbl_PATIENT</ID>
+  <EntityId>tblCol_647b36f61bb943f690325038a9f250b9</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="PATIENT_ID" id="tblCol_647b36f61bb943f690325038a9f250b9" index="0" datatype="Text" mandatory="true" />
+    <Column name="SSN" id="tblCol_8bc79f56bd104bec99456393aaaac968" index="1" datatype="Text" />
+    <Column name="FIRST_NAME" id="tblCol_02664e25ec7140cc979b18732728d0cc" index="2" datatype="Text" />
+    <Column name="LAST_NAME" id="tblCol_46597a350a184a9c9a30cb292529bcb9" index="3" datatype="Text" />
+    <Column name="ADDRESS" id="tblCol_6c3b8669198a4f72a6a28b3148c327c5" index="4" datatype="Text" />
+    <Column name="CITY" id="tblCol_33628de05da349abaeeb88a567be5eda" index="5" datatype="Text" />
+    <Column name="ZIP" id="tblCol_be543645e1064574b2bd377686d46359" index="6" datatype="Text" />
+    <Column name="STATE" id="tblCol_7cbb5bdd313e41b4b53bb797dfdc5360" index="7" datatype="Text" />
+    <Column name="COUNTRY" id="tblCol_26747f0fb7bd454fbbd4dbc18aafa331" index="8" datatype="Text" />
+    <Column name="timestamp" id="tblCol_ed012d5720994172b27449d73a8ef3b2" index="9" datatype="text" />
+    <Column name="Some_Text" id="tblCol_06cd3a5a7f724a6f8f80baf4e99cff09" index="10" datatype="text" />
+    <Column name="File" id="tblCol_0590955adf8b4a148da2b8918ac85cfb" index="11" datatype="text" />
+    <Column name="Template" id="tblCol_7f42e2ea818b420faa452bbf2b4936ac" index="12" datatype="text" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_647b36f61bb943f690325038a9f250b9" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

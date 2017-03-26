@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>tbl_CUST_COUNTRY</Name>
+  <ID>tbl_tbl_CUST_COUNTRY</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="CUSTOMER_ID" id="tblCol_5336a09021574d31a3ea08ee5657a597" index="0" datatype="Real" />
+    <Column name="COUNTRY_NAME" id="tblCol_2ea7f52d930d49b79bd8a7a59aa6af0e" index="1" datatype="Text" />
+    <Column name="COUNTRY_FLAG_URL" id="tblCol_771f17c3f5564b3f90d02cba9a0e111d" index="2" datatype="Text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

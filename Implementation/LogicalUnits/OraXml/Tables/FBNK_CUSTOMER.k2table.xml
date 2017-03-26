@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>FBNK_CUSTOMER</Name>
+  <ID>tbl_FBNK_CUSTOMER</ID>
+  <EntityId>tblCol_cd3e357da39d471d9e04667e569356d3</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="RECID" id="tblCol_cd3e357da39d471d9e04667e569356d3" index="0" datatype="Text" mandatory="true" />
+    <Column name="XMLRECORD" id="tblCol_366f21c47e0c46709bbccb47782a8cc1" index="1" datatype="text" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

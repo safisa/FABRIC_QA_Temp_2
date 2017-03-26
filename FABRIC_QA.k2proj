@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>FABRIC_QA</Name>
+  <CreateDate>2016-10-10T18:21:07.5994703+03:00</CreateDate>
+  <CreateUserId />
+  <ProductVersion>4.0.0.0</ProductVersion>
+  <UseTableObject>true</UseTableObject>
+  <ProjectItemPropList />
+  <ProjectItemsCategoryList />
+  <Description />
+</Project>

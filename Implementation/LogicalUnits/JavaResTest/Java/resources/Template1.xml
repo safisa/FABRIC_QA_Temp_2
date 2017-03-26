@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<patients>
+    [[[patient  =  Select PATIENT_ID, SSN, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIP, STATE, COUNTRY from PATIENT where rownum<5
+    <patient id=${patient.PATIENT_ID}>
+        <Title>
+            <FIRST_NAME>${@patient.FIRST_NAME}</FIRST_NAME>
+			<LAST_NAME>${@patient.LAST_NAME}</LAST_NAME>
+			<CITY>${@patient.CITY}</CITY>
+            <Date>${i_date}</Date>
+        </Title>
+    </patient>
+	[[[  empty = select * from PATIENT where 1=2
+	<HiddenText>
+        This text is not expected to be on the output, because
+        the query "empty" above returns 0 rows.
+    </HiddenText>
+    ]]]
+    ]]]
+</patients>

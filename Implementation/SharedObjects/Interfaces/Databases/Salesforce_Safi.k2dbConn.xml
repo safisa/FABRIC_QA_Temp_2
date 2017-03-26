@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DBConn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DBConnSalesforce" name="Salesforce_Safi" type="Salesforce" version="4.0.0.1">
+  <Active>true</Active>
+  <UserId>safi@k2view.com</UserId>
+  <Password>Yeyb4KZFAe8r3XgWQpe7EyyiWVz1tSonJmUp9HtsokE=:u5zkzxZyPmI3/5o79TSN0zEIA3JwXRNwqxSNTI51bFw=</Password>
+  <MaxConnectionsNumber>60</MaxConnectionsNumber>
+  <IsCustomConnectionString>true</IsCustomConnectionString>
+  <ConnectionStringClient>DRIVER={DataDirect 7.1 Salesforce};LogonID=safi@k2view.com;Password=[PASSWORD];SecurityToken=olHLiRdVKyFxbM8k9htalPYe;RefreshSchema=1;ConfigOptions={CustomSuffix=Include};</ConnectionStringClient>
+  <IsCustomConnectionStringServerSide>true</IsCustomConnectionStringServerSide>
+  <ConnectionStringServerSide>jdbc:k2view:sforce://login.salesforce.com;User=safi@k2view.com;Password=[PASSWORD];SecurityToken=olHLiRdVKyFxbM8k9htalPYe;RefreshSchema=true;ConfigOptions=(CustomSuffix=Include)</ConnectionStringServerSide>
+  <CommandList />
+  <SecurityToken>olHLiRdVKyFxbM8k9htalPYe</SecurityToken>
+  <ConnectionMode>Connection_String</ConnectionMode>
+</DBConn>

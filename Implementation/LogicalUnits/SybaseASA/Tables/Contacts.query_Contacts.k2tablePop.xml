@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_Contacts</ID>
+  <PopulationObjectName>query_Contacts</PopulationObjectName>
+  <TableName>Contacts</TableName>
+  <RootItemID>query_query_Contacts</RootItemID>
+  <SimpleObject>true</SimpleObject>
+  <InputArguments>
+    <Arg name="ID" id="queryCol_0" dataType="Integer" index="0" />
+    <Arg name="Surname" id="queryCol_1" dataType="Text" index="1" />
+    <Arg name="GivenName" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="Title" id="queryCol_3" dataType="Text" index="3" />
+    <Arg name="Street" id="queryCol_4" dataType="Text" index="4" />
+    <Arg name="City" id="queryCol_5" dataType="Text" index="5" />
+    <Arg name="State" id="queryCol_6" dataType="Text" index="6" />
+    <Arg name="Country" id="queryCol_7" dataType="Text" index="7" />
+    <Arg name="PostalCode" id="queryCol_8" dataType="Text" index="8" />
+    <Arg name="Phone" id="queryCol_9" dataType="Text" index="9" />
+    <Arg name="Fax" id="queryCol_10" dataType="Text" index="10" />
+    <Arg name="CustomerID" id="queryCol_11" dataType="Integer" index="11" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_Contacts" name="query_Contacts" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="dbSybase_ASA">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="ID" dataType="Integer" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="Surname" dataType="Text" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="GivenName" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="Title" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="Street" dataType="Text" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="City" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="State" dataType="Text" index="6" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_7" name="Country" dataType="Text" index="7" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_8" name="PostalCode" dataType="Text" index="8" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_9" name="Phone" dataType="Text" index="9" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_10" name="Fax" dataType="Text" index="10" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_11" name="CustomerID" dataType="Integer" index="11" />
+      </OutputsList>
+      <SQL><![CDATA[SELECT * FROM Contacts]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="28" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_0" toItemID="tbl_Contacts" toColID="tblCol_b4adce1aa6fd45baa9d3cc14fbb1f67d" />
+    <Link partId="29" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_1" toItemID="tbl_Contacts" toColID="tblCol_cd15f00e210f45d293c3fba29b5066e9" />
+    <Link partId="30" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_2" toItemID="tbl_Contacts" toColID="tblCol_8578ed5df1984f8980e4701a41f8ff97" />
+    <Link partId="31" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_3" toItemID="tbl_Contacts" toColID="tblCol_5888c4553a974260807d9529192d39f5" />
+    <Link partId="32" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_4" toItemID="tbl_Contacts" toColID="tblCol_a6d46fb831bb4010bd76fa67633eb8cd" />
+    <Link partId="33" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_5" toItemID="tbl_Contacts" toColID="tblCol_af3ba51fa08441faa4c78eb1b2d53edd" />
+    <Link partId="34" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_6" toItemID="tbl_Contacts" toColID="tblCol_b3540c8627f241099ba4355893406b7a" />
+    <Link partId="35" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_7" toItemID="tbl_Contacts" toColID="tblCol_5f20e9d638ba4c03b17e6b70c2276607" />
+    <Link partId="36" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_8" toItemID="tbl_Contacts" toColID="tblCol_f48d38b0fd8d4d4991cedd4d87014d9d" />
+    <Link partId="37" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_9" toItemID="tbl_Contacts" toColID="tblCol_5f805f0656984189b304da9e0eb65d78" />
+    <Link partId="38" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_10" toItemID="tbl_Contacts" toColID="tblCol_241656f49c5d479b94aa619a37abdb56" />
+    <Link partId="39" fromNodeOrder="0" fromItemID="query_query_Contacts" fromColID="queryCol_11" toItemID="tbl_Contacts" toColID="tblCol_4973f04e9e094ffd9d7ec1eb160d96b6" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

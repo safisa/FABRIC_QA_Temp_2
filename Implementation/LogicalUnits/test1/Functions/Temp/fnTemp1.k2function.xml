@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.2">
+  <Name>fnTemp1</Name>
+  <ID>Temp.fnTemp1</ID>
+  <Category>Temp</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>try{
+	//java.nio.file.Path layoutPath = java.nio.file.Paths.get("resources/test.txt");
+	//String content = new String(java.nio.file.Files.readAllBytes(layoutPath));
+	//String content = FileUtils.readFileToString(new java.io.File("C:/Users/Safi/AppData/Local/Temp/K2View/java_Fabric1/resources/test.txt"));
+	//String content = FileUtils.readFileToString(new java.io.File("test.txt"));
+	//java.io.File file = new java.io.File(getClass().getClassLoader().getResource("/test.txt").getFile());
+	//java.io.File file = new java.io.File(getClass().getClassLoader().getResource("test.txt").getFile());
+	//String content = org.apache.commons.io.FileUtils.readFileToString(file);
+	reportUserMessage("");
+	String content;
+	/*try(java.io.InputStream inputStream = getClass().getClassLoader().getResourceAsStream("test.txt")){
+		content = org.apache.commons.io.IOUtils.toString(inputStream);
+		//org.apache.commons.io.IOUtils.closeQuietly(inputStream);
+	}*/
+	content = a1.testFunc();
+	return content;
+	
+	//return "ddd";
+}
+catch(Exception ex){
+	log.error(ex.getMessage());
+	return null;
+}</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams />
+  <OutputParams>
+    <Output name="out1" id="fo.Temp.fnTemp1.0" index="0" dataType="String" />
+  </OutputParams>
+</KFunction>

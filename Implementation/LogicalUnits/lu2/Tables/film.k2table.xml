@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>film</Name>
+  <ID>tbl_film</ID>
+  <EntityId>tblCol_e7d540247ab44becaa94dd50be20b15a</EntityId>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="film_id" id="tblCol_e7d540247ab44becaa94dd50be20b15a" index="0" datatype="Integer" mandatory="true" />
+    <Column name="title" id="tblCol_aaca5ca78d1c4d9da45df87816461cca" index="1" datatype="Text" mandatory="true" />
+    <Column name="description" id="tblCol_a509db6766094f128dee607390df2a22" index="2" datatype="Text" />
+    <Column name="release_year" id="tblCol_f90a0d4990e3416295f64c9610a625f3" index="3" datatype="Integer" />
+    <Column name="language_id" id="tblCol_d632e0cfcb8e4cd79624cf3c9b0fd4ab" index="4" datatype="Integer" mandatory="true" />
+    <Column name="rental_duration" id="tblCol_fd7ea2a4b9fc46e0b612efb4321fc1ff" index="5" datatype="Integer" mandatory="true" />
+    <Column name="rental_rate" id="tblCol_0171ad7ca60a4c0ca6f063c17b3226cb" index="6" datatype="Real" mandatory="true" />
+    <Column name="length" id="tblCol_0572c4c8e1494291b4422d969c7d6ca6" index="7" datatype="Integer" />
+    <Column name="replacement_cost" id="tblCol_f140c1429d73485381de83182949222e" index="8" datatype="Real" mandatory="true" />
+    <Column name="rating" id="tblCol_49756b727d64459daabf2202ddb52985" index="9" datatype="Text" />
+    <Column name="last_update" id="tblCol_a25822f72daa41298e2d048999a670fc" index="10" datatype="Text" mandatory="true" />
+    <Column name="special_features" id="tblCol_b9db230cf09e4c92904f0c8f97a69c76" index="11" datatype="Text" />
+    <Column name="fulltext" id="tblCol_349ff969711d49019ca921cf70f8d1c7" index="12" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_e7d540247ab44becaa94dd50be20b15a" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Departments</Name>
+  <ID>tbl_Departments</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="DepartmentID" id="tblCol_6b078b4466014a3c99df1ea2fbd802c6" index="0" datatype="Integer" mandatory="true" />
+    <Column name="DepartmentName" id="tblCol_1c68d01071f5421c9d64601e8fffda12" index="1" datatype="Text" mandatory="true" />
+    <Column name="DepartmentHeadID" id="tblCol_096309bfd25b40c8a68dafca87f8bc23" index="2" datatype="Integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

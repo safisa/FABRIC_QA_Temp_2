@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TablePopulationObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>query_cust_country_2</ID>
+  <PopulationObjectName>query_cust_country_2</PopulationObjectName>
+  <TableName>cust_country</TableName>
+  <RootItemID>query_query_CUST_COUNTRY</RootItemID>
+  <SimpleObject>false</SimpleObject>
+  <InputArguments>
+    <Arg name="CUSTOMER_ID" id="queryCol_1" dataType="Real" index="1" />
+    <Arg name="COUNTRY_NAME" id="queryCol_2" dataType="Text" index="2" />
+    <Arg name="COUNTRY_FLAG_URL" id="queryCol_3" dataType="Text" index="3" />
+  </InputArguments>
+  <ItemsList>
+    <Item xsi:type="DBQueryDataSave" id="query_query_CUST_COUNTRY" name="query_CUST_COUNTRY" nodeOrder="0" module="DBQuery" mapObjectModule="DBQuery" connName="ludb">
+      <OutputsList>
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_0" name="SEQ" dataType="Real" index="0" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_1" name="CUSTOMER_ID" dataType="Real" index="1" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_2" name="COUNTRY_NAME" dataType="Text" index="2" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_3" name="COUNTRY_FLAG_URL" dataType="Text" index="3" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_4" name="COUNTRY_FLAG1" dataType="BLOB" index="4" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_5" name="COUNTRY_FLAG2" dataType="Text" index="5" />
+        <Output xsi:type="DBQueryDataSaveColumn" id="queryCol_6" name="ADD_INFROMATION" dataType="Text" index="6" />
+      </OutputsList>
+      <SQL><![CDATA[Select *
+From YP_COUNTRY_INFORMATION]]></SQL>
+    </Item>
+  </ItemsList>
+  <LinksList>
+    <Link partId="52" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_1" toItemID="cust_country" toColID="tblCol_aae5a871fed8419f91096f10297e36c3" />
+    <Link partId="53" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_2" toItemID="cust_country" toColID="tblCol_dac0dbe1171c454aaabe4c63a6f6b2fd" />
+    <Link partId="54" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_3" toItemID="cust_country" toColID="tblCol_57852160030946449cd1bfe9bd558781" />
+    <Link partId="83" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_0" toItemID="cust_country" toColID="tblCol_59f3865290ae4d9387aaff5139792746" />
+    <Link partId="84" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_4" toItemID="cust_country" toColID="tblCol_287251bc105244248dccbe2e177486c6" />
+    <Link partId="85" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_5" toItemID="cust_country" toColID="tblCol_c8acafdacc7f4499b11bb0546a4e6354" />
+    <Link partId="86" fromNodeOrder="0" fromItemID="query_query_CUST_COUNTRY" fromColID="queryCol_6" toItemID="cust_country" toColID="tblCol_f88a74722b9d4c0fbc2f51211b30f17f" />
+  </LinksList>
+  <ModeKeyColumnIDs />
+</TablePopulationObject>

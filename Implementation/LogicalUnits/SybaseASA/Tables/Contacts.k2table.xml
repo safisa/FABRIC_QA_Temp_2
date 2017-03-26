@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Contacts</Name>
+  <ID>tbl_Contacts</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="ID" id="tblCol_b4adce1aa6fd45baa9d3cc14fbb1f67d" index="0" datatype="Integer" mandatory="true" />
+    <Column name="Surname" id="tblCol_cd15f00e210f45d293c3fba29b5066e9" index="1" datatype="Text" mandatory="true" />
+    <Column name="GivenName" id="tblCol_8578ed5df1984f8980e4701a41f8ff97" index="2" datatype="Text" mandatory="true" />
+    <Column name="Title" id="tblCol_5888c4553a974260807d9529192d39f5" index="3" datatype="Text" />
+    <Column name="Street" id="tblCol_a6d46fb831bb4010bd76fa67633eb8cd" index="4" datatype="Text" />
+    <Column name="City" id="tblCol_af3ba51fa08441faa4c78eb1b2d53edd" index="5" datatype="Text" />
+    <Column name="State" id="tblCol_b3540c8627f241099ba4355893406b7a" index="6" datatype="Text" />
+    <Column name="Country" id="tblCol_5f20e9d638ba4c03b17e6b70c2276607" index="7" datatype="Text" />
+    <Column name="PostalCode" id="tblCol_f48d38b0fd8d4d4991cedd4d87014d9d" index="8" datatype="Text" />
+    <Column name="Phone" id="tblCol_5f805f0656984189b304da9e0eb65d78" index="9" datatype="Text" />
+    <Column name="Fax" id="tblCol_241656f49c5d479b94aa619a37abdb56" index="10" datatype="Text" />
+    <Column name="CustomerID" id="tblCol_4973f04e9e094ffd9d7ec1eb160d96b6" index="11" datatype="Integer" />
+  </Columns>
+  <IndexesList />
+  <EnrichmentList />
+</TableObject>

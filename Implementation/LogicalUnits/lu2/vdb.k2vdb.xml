@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VirtualDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2.4.0.11">
+  <Name>vdb</Name>
+  <RootView>film</RootView>
+  <AutomaticGenerationFK>false</AutomaticGenerationFK>
+  <EnableDataEncryption>false</EnableDataEncryption>
+  <LazyDataUpdate enabled="true" executePreVCs="false" executePostVCs="false" />
+  <Tables>
+    <Table>film</Table>
+    <Table>film_actor</Table>
+    <Table>film_category</Table>
+    <Table>inventory</Table>
+    <Table>rental</Table>
+    <Table>payment</Table>
+  </Tables>
+  <TablesProperties>
+    <TableProperties name="film">
+      <Populations>
+        <Population id="query_public_film" name="query_public_film" order="1" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="film_actor">
+      <Populations>
+        <Population id="query_public_film_actor" name="query_public_film_actor" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="film_category">
+      <Populations>
+        <Population id="query_public_film_category" name="query_public_film_category" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="inventory">
+      <Populations>
+        <Population id="query_public_inventory" name="query_public_inventory" order="2" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="rental">
+      <Populations>
+        <Population id="query_public_rental" name="query_public_rental" order="3" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+    <TableProperties name="payment">
+      <Populations>
+        <Population id="query_public_payment" name="query_public_payment" order="4" disabled="false" enrichment="false" />
+      </Populations>
+    </TableProperties>
+  </TablesProperties>
+  <EnrichmentsOrderList />
+  <ReferencesList>
+    <Item active="false" name="yp_country_information" />
+  </ReferencesList>
+  <Relations />
+  <DatabaseRelations>
+    <Relation id="225">
+      <From tableType="TableObject" table="film" column="film_id" columnId="tblCol_e7d540247ab44becaa94dd50be20b15a" />
+      <To tableType="TableObject" table="film_actor" populationObjectName="query_public_film_actor" column="film_id" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="226">
+      <From tableType="TableObject" table="film" column="film_id" columnId="tblCol_e7d540247ab44becaa94dd50be20b15a" />
+      <To tableType="TableObject" table="film_category" populationObjectName="query_public_film_category" column="film_id" columnId="queryCol_0" />
+    </Relation>
+    <Relation id="227">
+      <From tableType="TableObject" table="film" column="film_id" columnId="tblCol_e7d540247ab44becaa94dd50be20b15a" />
+      <To tableType="TableObject" table="inventory" populationObjectName="query_public_inventory" column="film_id" columnId="queryCol_1" />
+    </Relation>
+    <Relation id="228">
+      <From tableType="TableObject" table="inventory" column="inventory_id" columnId="tblCol_5e1b1ed211f24aaa90ddf0434ae96937" />
+      <To tableType="TableObject" table="rental" populationObjectName="query_public_rental" column="inventory_id" columnId="queryCol_2" />
+    </Relation>
+    <Relation id="229">
+      <From tableType="TableObject" table="rental" column="rental_id" columnId="tblCol_50bb0a6c1ee649c7b5da4326015d4c24" />
+      <To tableType="TableObject" table="payment" populationObjectName="query_public_payment" column="rental_id" columnId="queryCol_3" />
+    </Relation>
+  </DatabaseRelations>
+</VirtualDB>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<patients>
+    [[[patient  =  Select PATIENT_ID, SSN, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIP, STATE, COUNTRY from PATIENT where rownum<3
+    <patient id=${patient.PATIENT_ID}>
+        <Title>
+            <FIRST_NAME>${@patient.FIRST_NAME}</FIRST_NAME>
+			<LAST_NAME>${@patient.LAST_NAME}</LAST_NAME>
+			<CITY>${@patient.CITY}</CITY>
+            <Date>${i_date}</Date>
+        </Title>
+        [[[  temp (patient.temp ) = select 'aa' as col1, 'bb' as col2 from dual
+        <tag1 id=${temp.col1}>
+            <col1>${temp.col1}</col1>
+			<col2>${temp.col2}</col2>
+        </tag1>
+        ]]]after the closing tag you can write comments - it is ignored by the parser.   
+    </patient>
+	[[[  empty = select * from PATIENT where 1=2
+	<HiddenText>
+        This text is not expected to be on the output, because
+        the query "empty" above returns 0 rows.
+    </HiddenText>
+    ]]]
+    ]]]
+</patients>

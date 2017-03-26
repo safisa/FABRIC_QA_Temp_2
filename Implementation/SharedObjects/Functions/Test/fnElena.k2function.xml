@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<KFunction xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="3.1.0.1">
+  <Name>fnElena</Name>
+  <ID>Test.fnElena</ID>
+  <Category>Test</Category>
+  <FunctionLevel>Project</FunctionLevel>
+  <FunctionType>RegularFunction</FunctionType>
+  <FunctionType2>RegularFunction</FunctionType2>
+  <RegisterAsLuDbFunction>false</RegisterAsLuDbFunction>
+  <SaveToDLUR>false</SaveToDLUR>
+  <ApiFunction>false</ApiFunction>
+  <DecisionFunction>false</DecisionFunction>
+  <RequiresLuReference>false</RequiresLuReference>
+  <Desc />
+  <Auther name="" id="" />
+  <Language>Java</Language>
+  <FunctionBody>if(orgmed == null || orgmed == "")
+    return null;
+ 
+ 
+//define strings to bypass the ltr rtl diffrence
+int i = orgmed.indexOf("-")+1;
+String endStr = orgmed.substring(0,i);
+ 
+// reportUserMessage("orgmed"+orgmed+" "+orgmed.equals("השהיה-ר"));
+reportUserMessage(orgmed.equals("ר-השהיה")+" "+orgmed.compareTo("השהיה-ר"));
+ 
+ 
+ 
+if(!orgmed.equals("השהיה-ר") &amp;&amp; !orgmed.equals("השהיה") &amp;&amp; !orgmed.equals("השהיל")
+	&amp;&amp; !orgmed.equals("השהיל-ר")  &amp;&amp; !orgmed.equals("השכיר") &amp;&amp; !orgmed.equals("השמהיר")
+	&amp;&amp; !orgmed.equals("השמהיר-ר") &amp;&amp; !orgmed.equals("השכיר-ר") &amp;&amp; !orgmed.equals("השפנימ")
+	&amp;&amp; !orgmed.equals("השפנימ-ר") &amp;&amp; !orgmed.equals("השליס-ר") &amp;&amp; !orgmed.equals("השליס")
+	&amp;&amp; (endStr.equals("ר-")  || endStr.equals("")) &amp;&amp; !orgmed.equals(""))
+    return ""+1;
+else if (endStr.equals("רמ-") || endStr.equals("מ-"))
+    return ""+2;
+else if (endStr.equals("רמי-") || endStr.equals("מי-"))
+    return ""+3;
+else if (endStr.equals("א-")|| endStr.equals("מע-"))
+	return ""+4;
+else if (orgmed.equals("השהיה-ר") || orgmed.equals("השהיה") || orgmed.equals("השהיל")
+	|| orgmed.equals("השהיל-ר")  || orgmed.equals("השכיר") || orgmed.equals("השמהיר")
+	|| orgmed.equals( "השמהיר-ר") || orgmed.equals("השכיר-ר") || orgmed.equals("השפנימ")
+	|| orgmed.equals("השפנימ-ר") || orgmed.equals("השליס-ר") || orgmed.equals("השליס"))
+    return ""+5;
+else
+    return null;</FunctionBody>
+  <IsSyntaxValid>true</IsSyntaxValid>
+  <IsRootFunction>false</IsRootFunction>
+  <InputParams>
+    <Input name="orgmed" id="fi.Test.fnElena.0" index="0" dataType="String" />
+  </InputParams>
+  <OutputParams>
+    <Output name="out" id="fo.Test.fnElena.0" index="0" dataType="String" />
+  </OutputParams>
+</KFunction>

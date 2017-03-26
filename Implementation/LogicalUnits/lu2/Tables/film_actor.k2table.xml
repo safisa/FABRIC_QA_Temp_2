@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TableObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>film_actor</Name>
+  <ID>tbl_film_actor</ID>
+  <LazyDataUpdate performEvery="1.00:00:00" />
+  <Columns>
+    <Column name="actor_id" id="tblCol_4d9ffe3f11764d72b44080229ffdff75" index="0" datatype="Integer" mandatory="true" />
+    <Column name="film_id" id="tblCol_c37a92017fc94bf19e78c477be2292ae" index="1" datatype="Integer" mandatory="true" />
+    <Column name="last_update" id="tblCol_a685b19e681d4fb0bc8ebec1ccccb484" index="2" datatype="Text" mandatory="true" />
+  </Columns>
+  <IndexesList>
+    <Index id="1" pk="true" unique="true" columnsIdsList="tblCol_4d9ffe3f11764d72b44080229ffdff75,tblCol_c37a92017fc94bf19e78c477be2292ae" />
+  </IndexesList>
+  <EnrichmentList />
+</TableObject>
